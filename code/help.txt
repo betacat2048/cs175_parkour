@@ -1,0 +1,3562 @@
+Help on module MalmoPython:
+
+NAME
+    MalmoPython
+
+CLASSES
+    Boost.Python.enum(builtins.int)
+        FrameType
+        LoggingComponent
+        LoggingSeverityLevel
+        MissionErrorCode
+        ObservationsPolicy
+        RewardsPolicy
+        VideoPolicy
+    Boost.Python.instance(builtins.object)
+        ArgumentParser
+            AgentHost
+        ClientInfo
+        ClientInfoVector
+        ClientPool
+        MissionExceptionDetails
+        MissionRecordSpec
+        MissionSpec
+        ParameterSet
+        StringVector
+        TimestampedReward
+        TimestampedRewardVector
+        TimestampedString
+        TimestampedStringVector
+        TimestampedVideoFrame
+        TimestampedVideoFrameVector
+        WorldState
+    builtins.RuntimeError(builtins.Exception)
+        MissionException
+    
+    class AgentHost(ArgumentParser)
+     |  Method resolution order:
+     |      AgentHost
+     |      ArgumentParser
+     |      Boost.Python.instance
+     |      builtins.object
+     |  
+     |  Static methods defined here:
+     |  
+     |  __init__(...)
+     |      __init__( (object)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void __init__(struct _object * __ptr64)
+     |  
+     |  __reduce__ = <unnamed Boost.Python function>(...)
+     |  
+     |  __str__(...)
+     |      __str__( (AgentHost)arg1) -> object :
+     |      
+     |          C++ signature :
+     |              struct _object * __ptr64 __str__(class malmo::AgentHost {lvalue})
+     |  
+     |  getRecordingTemporaryDirectory(...)
+     |      getRecordingTemporaryDirectory( (AgentHost)arg1) -> str :
+     |      
+     |          C++ signature :
+     |              class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > getRecordingTemporaryDirectory(class malmo::AgentHost {lvalue})
+     |  
+     |  getWorldState(...)
+     |      getWorldState( (AgentHost)arg1) -> WorldState :
+     |      
+     |          C++ signature :
+     |              struct malmo::WorldState getWorldState(class malmo::AgentHost {lvalue})
+     |  
+     |  killClient(...)
+     |      killClient( (AgentHost)arg1, (ClientInfo)arg2) -> bool :
+     |      
+     |          C++ signature :
+     |              bool killClient(class malmo::AgentHost {lvalue},struct malmo::ClientInfo)
+     |  
+     |  peekWorldState(...)
+     |      peekWorldState( (AgentHost)arg1) -> WorldState :
+     |      
+     |          C++ signature :
+     |              struct malmo::WorldState peekWorldState(class malmo::AgentHost {lvalue})
+     |  
+     |  sendCommand(...)
+     |      sendCommand( (AgentHost)arg1, (str)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void sendCommand(class malmo::AgentHost {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |      
+     |      sendCommand( (AgentHost)arg1, (str)arg2, (str)arg3) -> None :
+     |      
+     |          C++ signature :
+     |              void sendCommand(class malmo::AgentHost {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  setDebugOutput(...)
+     |      setDebugOutput( (AgentHost)arg1, (bool)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void setDebugOutput(class malmo::AgentHost {lvalue},bool)
+     |  
+     |  setObservationsPolicy(...)
+     |      setObservationsPolicy( (AgentHost)arg1, (ObservationsPolicy)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void setObservationsPolicy(class malmo::AgentHost {lvalue},enum malmo::AgentHost::ObservationsPolicy)
+     |  
+     |  setRewardsPolicy(...)
+     |      setRewardsPolicy( (AgentHost)arg1, (RewardsPolicy)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void setRewardsPolicy(class malmo::AgentHost {lvalue},enum malmo::AgentHost::RewardsPolicy)
+     |  
+     |  setVideoPolicy(...)
+     |      setVideoPolicy( (AgentHost)arg1, (VideoPolicy)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void setVideoPolicy(class malmo::AgentHost {lvalue},enum malmo::AgentHost::VideoPolicy)
+     |  
+     |  startMission(...)
+     |      startMission( (AgentHost)arg1, (MissionSpec)arg2, (MissionRecordSpec)arg3) -> None :
+     |      
+     |          C++ signature :
+     |              void startMission(class malmo::AgentHost {lvalue},class malmo::MissionSpec,struct malmo::MissionRecordSpec)
+     |      
+     |      startMission( (AgentHost)arg1, (MissionSpec)arg2, (ClientPool)arg3, (MissionRecordSpec)arg4, (int)arg5, (str)arg6) -> None :
+     |      
+     |          C++ signature :
+     |              void startMission(class malmo::AgentHost {lvalue},class malmo::MissionSpec,struct malmo::ClientPool,struct malmo::MissionRecordSpec,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  __instance_size__ = 984
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from ArgumentParser:
+     |  
+     |  addOptionalFlag(...)
+     |      addOptionalFlag( (ArgumentParser)arg1, (str)arg2, (str)arg3) -> None :
+     |      
+     |          C++ signature :
+     |              void addOptionalFlag(class malmo::ArgumentParser {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  addOptionalFloatArgument(...)
+     |      addOptionalFloatArgument( (ArgumentParser)arg1, (str)arg2, (str)arg3, (float)arg4) -> None :
+     |      
+     |          C++ signature :
+     |              void addOptionalFloatArgument(class malmo::ArgumentParser {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,double)
+     |  
+     |  addOptionalIntArgument(...)
+     |      addOptionalIntArgument( (ArgumentParser)arg1, (str)arg2, (str)arg3, (int)arg4) -> None :
+     |      
+     |          C++ signature :
+     |              void addOptionalIntArgument(class malmo::ArgumentParser {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,int)
+     |  
+     |  addOptionalStringArgument(...)
+     |      addOptionalStringArgument( (ArgumentParser)arg1, (str)arg2, (str)arg3, (str)arg4) -> None :
+     |      
+     |          C++ signature :
+     |              void addOptionalStringArgument(class malmo::ArgumentParser {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  getFloatArgument(...)
+     |      getFloatArgument( (ArgumentParser)arg1, (str)arg2) -> float :
+     |      
+     |          C++ signature :
+     |              double getFloatArgument(class malmo::ArgumentParser {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  getIntArgument(...)
+     |      getIntArgument( (ArgumentParser)arg1, (str)arg2) -> int :
+     |      
+     |          C++ signature :
+     |              int getIntArgument(class malmo::ArgumentParser {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  getStringArgument(...)
+     |      getStringArgument( (ArgumentParser)arg1, (str)arg2) -> str :
+     |      
+     |          C++ signature :
+     |              class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > getStringArgument(class malmo::ArgumentParser {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  getUsage(...)
+     |      getUsage( (ArgumentParser)arg1) -> str :
+     |      
+     |          C++ signature :
+     |              class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > getUsage(class malmo::ArgumentParser {lvalue})
+     |  
+     |  parse(...)
+     |      parse( (ArgumentParser)arg1, (list)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void parse(class malmo::ArgumentParser * __ptr64,class boost::python::list)
+     |  
+     |  receivedArgument(...)
+     |      receivedArgument( (ArgumentParser)arg1, (str)arg2) -> bool :
+     |      
+     |          C++ signature :
+     |              bool receivedArgument(class malmo::ArgumentParser {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from Boost.Python.instance:
+     |  
+     |  __new__(*args, **kwargs) from Boost.Python.class
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from Boost.Python.instance:
+     |  
+     |  __dict__
+     |  
+     |  __weakref__
+    
+    class ArgumentParser(Boost.Python.instance)
+     |  Method resolution order:
+     |      ArgumentParser
+     |      Boost.Python.instance
+     |      builtins.object
+     |  
+     |  Static methods defined here:
+     |  
+     |  __init__(...)
+     |      __init__( (object)arg1, (str)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void __init__(struct _object * __ptr64,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  __reduce__ = <unnamed Boost.Python function>(...)
+     |  
+     |  addOptionalFlag(...)
+     |      addOptionalFlag( (ArgumentParser)arg1, (str)arg2, (str)arg3) -> None :
+     |      
+     |          C++ signature :
+     |              void addOptionalFlag(class malmo::ArgumentParser {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  addOptionalFloatArgument(...)
+     |      addOptionalFloatArgument( (ArgumentParser)arg1, (str)arg2, (str)arg3, (float)arg4) -> None :
+     |      
+     |          C++ signature :
+     |              void addOptionalFloatArgument(class malmo::ArgumentParser {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,double)
+     |  
+     |  addOptionalIntArgument(...)
+     |      addOptionalIntArgument( (ArgumentParser)arg1, (str)arg2, (str)arg3, (int)arg4) -> None :
+     |      
+     |          C++ signature :
+     |              void addOptionalIntArgument(class malmo::ArgumentParser {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,int)
+     |  
+     |  addOptionalStringArgument(...)
+     |      addOptionalStringArgument( (ArgumentParser)arg1, (str)arg2, (str)arg3, (str)arg4) -> None :
+     |      
+     |          C++ signature :
+     |              void addOptionalStringArgument(class malmo::ArgumentParser {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  getFloatArgument(...)
+     |      getFloatArgument( (ArgumentParser)arg1, (str)arg2) -> float :
+     |      
+     |          C++ signature :
+     |              double getFloatArgument(class malmo::ArgumentParser {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  getIntArgument(...)
+     |      getIntArgument( (ArgumentParser)arg1, (str)arg2) -> int :
+     |      
+     |          C++ signature :
+     |              int getIntArgument(class malmo::ArgumentParser {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  getStringArgument(...)
+     |      getStringArgument( (ArgumentParser)arg1, (str)arg2) -> str :
+     |      
+     |          C++ signature :
+     |              class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > getStringArgument(class malmo::ArgumentParser {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  getUsage(...)
+     |      getUsage( (ArgumentParser)arg1) -> str :
+     |      
+     |          C++ signature :
+     |              class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > getUsage(class malmo::ArgumentParser {lvalue})
+     |  
+     |  parse(...)
+     |      parse( (ArgumentParser)arg1, (list)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void parse(class malmo::ArgumentParser * __ptr64,class boost::python::list)
+     |  
+     |  receivedArgument(...)
+     |      receivedArgument( (ArgumentParser)arg1, (str)arg2) -> bool :
+     |      
+     |          C++ signature :
+     |              bool receivedArgument(class malmo::ArgumentParser {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  __instance_size__ = 192
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from Boost.Python.instance:
+     |  
+     |  __new__(*args, **kwargs) from Boost.Python.class
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from Boost.Python.instance:
+     |  
+     |  __dict__
+     |  
+     |  __weakref__
+    
+    class ClientInfo(Boost.Python.instance)
+     |  Method resolution order:
+     |      ClientInfo
+     |      Boost.Python.instance
+     |      builtins.object
+     |  
+     |  Static methods defined here:
+     |  
+     |  __init__(...)
+     |      __init__( (object)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void __init__(struct _object * __ptr64)
+     |      
+     |      __init__( (object)arg1, (str)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void __init__(struct _object * __ptr64,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |      
+     |      __init__( (object)arg1, (str)arg2, (int)arg3) -> None :
+     |      
+     |          C++ signature :
+     |              void __init__(struct _object * __ptr64,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,int)
+     |      
+     |      __init__( (object)arg1, (str)arg2, (int)arg3, (int)arg4) -> None :
+     |      
+     |          C++ signature :
+     |              void __init__(struct _object * __ptr64,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,int,int)
+     |  
+     |  __reduce__ = <unnamed Boost.Python function>(...)
+     |  
+     |  __str__(...)
+     |      __str__( (ClientInfo)arg1) -> object :
+     |      
+     |          C++ signature :
+     |              struct _object * __ptr64 __str__(struct malmo::ClientInfo {lvalue})
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  command_port
+     |  
+     |  control_port
+     |  
+     |  ip_address
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  __instance_size__ = 56
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from Boost.Python.instance:
+     |  
+     |  __new__(*args, **kwargs) from Boost.Python.class
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from Boost.Python.instance:
+     |  
+     |  __dict__
+     |  
+     |  __weakref__
+    
+    class ClientInfoVector(Boost.Python.instance)
+     |  Method resolution order:
+     |      ClientInfoVector
+     |      Boost.Python.instance
+     |      builtins.object
+     |  
+     |  Static methods defined here:
+     |  
+     |  __contains__(...)
+     |      __contains__( (ClientInfoVector)arg1, (object)arg2) -> bool :
+     |      
+     |          C++ signature :
+     |              bool __contains__(class std::vector<class boost::shared_ptr<struct malmo::ClientInfo>,class std::allocator<class boost::shared_ptr<struct malmo::ClientInfo> > > {lvalue},struct _object * __ptr64)
+     |  
+     |  __delitem__(...)
+     |      __delitem__( (ClientInfoVector)arg1, (object)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void __delitem__(class std::vector<class boost::shared_ptr<struct malmo::ClientInfo>,class std::allocator<class boost::shared_ptr<struct malmo::ClientInfo> > > {lvalue},struct _object * __ptr64)
+     |  
+     |  __getitem__(...)
+     |      __getitem__( (object)arg1, (object)arg2) -> object :
+     |      
+     |          C++ signature :
+     |              class boost::python::api::object __getitem__(struct boost::python::back_reference<class std::vector<class boost::shared_ptr<struct malmo::ClientInfo>,class std::allocator<class boost::shared_ptr<struct malmo::ClientInfo> > > & __ptr64>,struct _object * __ptr64)
+     |  
+     |  __init__(...)
+     |      __init__( (object)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void __init__(struct _object * __ptr64)
+     |  
+     |  __iter__(...)
+     |      __iter__( (object)arg1) -> object :
+     |      
+     |          C++ signature :
+     |              struct boost::python::objects::iterator_range<struct boost::python::return_value_policy<struct boost::python::return_by_value,struct boost::python::default_call_policies>,class std::_Vector_iterator<class std::_Vector_val<struct std::_Simple_types<class boost::shared_ptr<struct malmo::ClientInfo> > > > > __iter__(struct boost::python::back_reference<class std::vector<class boost::shared_ptr<struct malmo::ClientInfo>,class std::allocator<class boost::shared_ptr<struct malmo::ClientInfo> > > & __ptr64>)
+     |  
+     |  __len__(...)
+     |      __len__( (ClientInfoVector)arg1) -> int :
+     |      
+     |          C++ signature :
+     |              unsigned __int64 __len__(class std::vector<class boost::shared_ptr<struct malmo::ClientInfo>,class std::allocator<class boost::shared_ptr<struct malmo::ClientInfo> > > {lvalue})
+     |  
+     |  __reduce__ = <unnamed Boost.Python function>(...)
+     |  
+     |  __setitem__(...)
+     |      __setitem__( (ClientInfoVector)arg1, (object)arg2, (object)arg3) -> None :
+     |      
+     |          C++ signature :
+     |              void __setitem__(class std::vector<class boost::shared_ptr<struct malmo::ClientInfo>,class std::allocator<class boost::shared_ptr<struct malmo::ClientInfo> > > {lvalue},struct _object * __ptr64,struct _object * __ptr64)
+     |  
+     |  append(...)
+     |      append( (ClientInfoVector)arg1, (object)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void append(class std::vector<class boost::shared_ptr<struct malmo::ClientInfo>,class std::allocator<class boost::shared_ptr<struct malmo::ClientInfo> > > {lvalue},class boost::python::api::object)
+     |  
+     |  extend(...)
+     |      extend( (ClientInfoVector)arg1, (object)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void extend(class std::vector<class boost::shared_ptr<struct malmo::ClientInfo>,class std::allocator<class boost::shared_ptr<struct malmo::ClientInfo> > > {lvalue},class boost::python::api::object)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  __instance_size__ = 40
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from Boost.Python.instance:
+     |  
+     |  __new__(*args, **kwargs) from Boost.Python.class
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from Boost.Python.instance:
+     |  
+     |  __dict__
+     |  
+     |  __weakref__
+    
+    class ClientPool(Boost.Python.instance)
+     |  Method resolution order:
+     |      ClientPool
+     |      Boost.Python.instance
+     |      builtins.object
+     |  
+     |  Static methods defined here:
+     |  
+     |  __init__(...)
+     |      __init__( (object)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void __init__(struct _object * __ptr64)
+     |  
+     |  __reduce__ = <unnamed Boost.Python function>(...)
+     |  
+     |  __str__(...)
+     |      __str__( (ClientPool)arg1) -> object :
+     |      
+     |          C++ signature :
+     |              struct _object * __ptr64 __str__(struct malmo::ClientPool {lvalue})
+     |  
+     |  add(...)
+     |      add( (ClientPool)arg1, (ClientInfo)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void add(struct malmo::ClientPool {lvalue},struct malmo::ClientInfo)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  clients
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  __instance_size__ = 72
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from Boost.Python.instance:
+     |  
+     |  __new__(*args, **kwargs) from Boost.Python.class
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from Boost.Python.instance:
+     |  
+     |  __dict__
+     |  
+     |  __weakref__
+    
+    class FrameType(Boost.Python.enum)
+     |  int([x]) -> integer
+     |  int(x, base=10) -> integer
+     |  
+     |  Convert a number or string to an integer, or return 0 if no arguments
+     |  are given.  If x is a number, return x.__int__().  For floating point
+     |  numbers, this truncates towards zero.
+     |  
+     |  If x is not a number or if base is given, then x must be a string,
+     |  bytes, or bytearray instance representing an integer literal in the
+     |  given base.  The literal can be preceded by '+' or '-' and be surrounded
+     |  by whitespace.  The base defaults to 10.  Valid bases are 0 and 2-36.
+     |  Base 0 means to interpret the base from the string as an integer literal.
+     |  >>> int('0b100', base=0)
+     |  4
+     |  
+     |  Method resolution order:
+     |      FrameType
+     |      Boost.Python.enum
+     |      builtins.int
+     |      builtins.object
+     |  
+     |  Data and other attributes defined here:
+     |  
+     |  COLOUR_MAP = MalmoPython.FrameType.COLOUR_MAP
+     |  
+     |  DEPTH_MAP = MalmoPython.FrameType.DEPTH_MAP
+     |  
+     |  LUMINANCE = MalmoPython.FrameType.LUMINANCE
+     |  
+     |  VIDEO = MalmoPython.FrameType.VIDEO
+     |  
+     |  names = {'COLOUR_MAP': MalmoPython.FrameType.COLOUR_MAP, 'DEPTH_MAP': ...
+     |  
+     |  values = {0: MalmoPython.FrameType.VIDEO, 1: MalmoPython.FrameType.DEP...
+     |  
+     |  ----------------------------------------------------------------------
+     |  Methods inherited from Boost.Python.enum:
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  __str__(self, /)
+     |      Return str(self).
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from Boost.Python.enum:
+     |  
+     |  name
+     |  
+     |  ----------------------------------------------------------------------
+     |  Methods inherited from builtins.int:
+     |  
+     |  __abs__(self, /)
+     |      abs(self)
+     |  
+     |  __add__(self, value, /)
+     |      Return self+value.
+     |  
+     |  __and__(self, value, /)
+     |      Return self&value.
+     |  
+     |  __bool__(self, /)
+     |      self != 0
+     |  
+     |  __ceil__(...)
+     |      Ceiling of an Integral returns itself.
+     |  
+     |  __divmod__(self, value, /)
+     |      Return divmod(self, value).
+     |  
+     |  __eq__(self, value, /)
+     |      Return self==value.
+     |  
+     |  __float__(self, /)
+     |      float(self)
+     |  
+     |  __floor__(...)
+     |      Flooring an Integral returns itself.
+     |  
+     |  __floordiv__(self, value, /)
+     |      Return self//value.
+     |  
+     |  __format__(self, format_spec, /)
+     |      Default object formatter.
+     |  
+     |  __ge__(self, value, /)
+     |      Return self>=value.
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __getnewargs__(self, /)
+     |  
+     |  __gt__(self, value, /)
+     |      Return self>value.
+     |  
+     |  __hash__(self, /)
+     |      Return hash(self).
+     |  
+     |  __index__(self, /)
+     |      Return self converted to an integer, if self is suitable for use as an index into a list.
+     |  
+     |  __int__(self, /)
+     |      int(self)
+     |  
+     |  __invert__(self, /)
+     |      ~self
+     |  
+     |  __le__(self, value, /)
+     |      Return self<=value.
+     |  
+     |  __lshift__(self, value, /)
+     |      Return self<<value.
+     |  
+     |  __lt__(self, value, /)
+     |      Return self<value.
+     |  
+     |  __mod__(self, value, /)
+     |      Return self%value.
+     |  
+     |  __mul__(self, value, /)
+     |      Return self*value.
+     |  
+     |  __ne__(self, value, /)
+     |      Return self!=value.
+     |  
+     |  __neg__(self, /)
+     |      -self
+     |  
+     |  __or__(self, value, /)
+     |      Return self|value.
+     |  
+     |  __pos__(self, /)
+     |      +self
+     |  
+     |  __pow__(self, value, mod=None, /)
+     |      Return pow(self, value, mod).
+     |  
+     |  __radd__(self, value, /)
+     |      Return value+self.
+     |  
+     |  __rand__(self, value, /)
+     |      Return value&self.
+     |  
+     |  __rdivmod__(self, value, /)
+     |      Return divmod(value, self).
+     |  
+     |  __rfloordiv__(self, value, /)
+     |      Return value//self.
+     |  
+     |  __rlshift__(self, value, /)
+     |      Return value<<self.
+     |  
+     |  __rmod__(self, value, /)
+     |      Return value%self.
+     |  
+     |  __rmul__(self, value, /)
+     |      Return value*self.
+     |  
+     |  __ror__(self, value, /)
+     |      Return value|self.
+     |  
+     |  __round__(...)
+     |      Rounding an Integral returns itself.
+     |      Rounding with an ndigits argument also returns an integer.
+     |  
+     |  __rpow__(self, value, mod=None, /)
+     |      Return pow(value, self, mod).
+     |  
+     |  __rrshift__(self, value, /)
+     |      Return value>>self.
+     |  
+     |  __rshift__(self, value, /)
+     |      Return self>>value.
+     |  
+     |  __rsub__(self, value, /)
+     |      Return value-self.
+     |  
+     |  __rtruediv__(self, value, /)
+     |      Return value/self.
+     |  
+     |  __rxor__(self, value, /)
+     |      Return value^self.
+     |  
+     |  __sizeof__(self, /)
+     |      Returns size in memory, in bytes.
+     |  
+     |  __sub__(self, value, /)
+     |      Return self-value.
+     |  
+     |  __truediv__(self, value, /)
+     |      Return self/value.
+     |  
+     |  __trunc__(...)
+     |      Truncating an Integral returns itself.
+     |  
+     |  __xor__(self, value, /)
+     |      Return self^value.
+     |  
+     |  bit_length(self, /)
+     |      Number of bits necessary to represent self in binary.
+     |      
+     |      >>> bin(37)
+     |      '0b100101'
+     |      >>> (37).bit_length()
+     |      6
+     |  
+     |  conjugate(...)
+     |      Returns self, the complex conjugate of any int.
+     |  
+     |  to_bytes(self, /, length, byteorder, *, signed=False)
+     |      Return an array of bytes representing an integer.
+     |      
+     |      length
+     |        Length of bytes object to use.  An OverflowError is raised if the
+     |        integer is not representable with the given number of bytes.
+     |      byteorder
+     |        The byte order used to represent the integer.  If byteorder is 'big',
+     |        the most significant byte is at the beginning of the byte array.  If
+     |        byteorder is 'little', the most significant byte is at the end of the
+     |        byte array.  To request the native byte order of the host system, use
+     |        `sys.byteorder' as the byte order value.
+     |      signed
+     |        Determines whether two's complement is used to represent the integer.
+     |        If signed is False and a negative integer is given, an OverflowError
+     |        is raised.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Class methods inherited from builtins.int:
+     |  
+     |  from_bytes(bytes, byteorder, *, signed=False) from builtins.type
+     |      Return the integer represented by the given array of bytes.
+     |      
+     |      bytes
+     |        Holds the array of bytes to convert.  The argument must either
+     |        support the buffer protocol or be an iterable object producing bytes.
+     |        Bytes and bytearray are examples of built-in objects that support the
+     |        buffer protocol.
+     |      byteorder
+     |        The byte order used to represent the integer.  If byteorder is 'big',
+     |        the most significant byte is at the beginning of the byte array.  If
+     |        byteorder is 'little', the most significant byte is at the end of the
+     |        byte array.  To request the native byte order of the host system, use
+     |        `sys.byteorder' as the byte order value.
+     |      signed
+     |        Indicates whether two's complement is used to represent the integer.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from builtins.int:
+     |  
+     |  __new__(*args, **kwargs) from builtins.type
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from builtins.int:
+     |  
+     |  denominator
+     |      the denominator of a rational number in lowest terms
+     |  
+     |  imag
+     |      the imaginary part of a complex number
+     |  
+     |  numerator
+     |      the numerator of a rational number in lowest terms
+     |  
+     |  real
+     |      the real part of a complex number
+    
+    class LoggingComponent(Boost.Python.enum)
+     |  int([x]) -> integer
+     |  int(x, base=10) -> integer
+     |  
+     |  Convert a number or string to an integer, or return 0 if no arguments
+     |  are given.  If x is a number, return x.__int__().  For floating point
+     |  numbers, this truncates towards zero.
+     |  
+     |  If x is not a number or if base is given, then x must be a string,
+     |  bytes, or bytearray instance representing an integer literal in the
+     |  given base.  The literal can be preceded by '+' or '-' and be surrounded
+     |  by whitespace.  The base defaults to 10.  Valid bases are 0 and 2-36.
+     |  Base 0 means to interpret the base from the string as an integer literal.
+     |  >>> int('0b100', base=0)
+     |  4
+     |  
+     |  Method resolution order:
+     |      LoggingComponent
+     |      Boost.Python.enum
+     |      builtins.int
+     |      builtins.object
+     |  
+     |  Data and other attributes defined here:
+     |  
+     |  LOG_AGENTHOST = MalmoPython.LoggingComponent.LOG_AGENTHOST
+     |  
+     |  LOG_ALL_COMPONENTS = MalmoPython.LoggingComponent.LOG_ALL_COMPONENTS
+     |  
+     |  LOG_RECORDING = MalmoPython.LoggingComponent.LOG_RECORDING
+     |  
+     |  LOG_TCP = MalmoPython.LoggingComponent.LOG_TCP
+     |  
+     |  LOG_VIDEO = MalmoPython.LoggingComponent.LOG_VIDEO
+     |  
+     |  names = {'LOG_AGENTHOST': MalmoPython.LoggingComponent.LOG_AGENTHOST, ...
+     |  
+     |  values = {1: MalmoPython.LoggingComponent.LOG_TCP, 2: MalmoPython.Logg...
+     |  
+     |  ----------------------------------------------------------------------
+     |  Methods inherited from Boost.Python.enum:
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  __str__(self, /)
+     |      Return str(self).
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from Boost.Python.enum:
+     |  
+     |  name
+     |  
+     |  ----------------------------------------------------------------------
+     |  Methods inherited from builtins.int:
+     |  
+     |  __abs__(self, /)
+     |      abs(self)
+     |  
+     |  __add__(self, value, /)
+     |      Return self+value.
+     |  
+     |  __and__(self, value, /)
+     |      Return self&value.
+     |  
+     |  __bool__(self, /)
+     |      self != 0
+     |  
+     |  __ceil__(...)
+     |      Ceiling of an Integral returns itself.
+     |  
+     |  __divmod__(self, value, /)
+     |      Return divmod(self, value).
+     |  
+     |  __eq__(self, value, /)
+     |      Return self==value.
+     |  
+     |  __float__(self, /)
+     |      float(self)
+     |  
+     |  __floor__(...)
+     |      Flooring an Integral returns itself.
+     |  
+     |  __floordiv__(self, value, /)
+     |      Return self//value.
+     |  
+     |  __format__(self, format_spec, /)
+     |      Default object formatter.
+     |  
+     |  __ge__(self, value, /)
+     |      Return self>=value.
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __getnewargs__(self, /)
+     |  
+     |  __gt__(self, value, /)
+     |      Return self>value.
+     |  
+     |  __hash__(self, /)
+     |      Return hash(self).
+     |  
+     |  __index__(self, /)
+     |      Return self converted to an integer, if self is suitable for use as an index into a list.
+     |  
+     |  __int__(self, /)
+     |      int(self)
+     |  
+     |  __invert__(self, /)
+     |      ~self
+     |  
+     |  __le__(self, value, /)
+     |      Return self<=value.
+     |  
+     |  __lshift__(self, value, /)
+     |      Return self<<value.
+     |  
+     |  __lt__(self, value, /)
+     |      Return self<value.
+     |  
+     |  __mod__(self, value, /)
+     |      Return self%value.
+     |  
+     |  __mul__(self, value, /)
+     |      Return self*value.
+     |  
+     |  __ne__(self, value, /)
+     |      Return self!=value.
+     |  
+     |  __neg__(self, /)
+     |      -self
+     |  
+     |  __or__(self, value, /)
+     |      Return self|value.
+     |  
+     |  __pos__(self, /)
+     |      +self
+     |  
+     |  __pow__(self, value, mod=None, /)
+     |      Return pow(self, value, mod).
+     |  
+     |  __radd__(self, value, /)
+     |      Return value+self.
+     |  
+     |  __rand__(self, value, /)
+     |      Return value&self.
+     |  
+     |  __rdivmod__(self, value, /)
+     |      Return divmod(value, self).
+     |  
+     |  __rfloordiv__(self, value, /)
+     |      Return value//self.
+     |  
+     |  __rlshift__(self, value, /)
+     |      Return value<<self.
+     |  
+     |  __rmod__(self, value, /)
+     |      Return value%self.
+     |  
+     |  __rmul__(self, value, /)
+     |      Return value*self.
+     |  
+     |  __ror__(self, value, /)
+     |      Return value|self.
+     |  
+     |  __round__(...)
+     |      Rounding an Integral returns itself.
+     |      Rounding with an ndigits argument also returns an integer.
+     |  
+     |  __rpow__(self, value, mod=None, /)
+     |      Return pow(value, self, mod).
+     |  
+     |  __rrshift__(self, value, /)
+     |      Return value>>self.
+     |  
+     |  __rshift__(self, value, /)
+     |      Return self>>value.
+     |  
+     |  __rsub__(self, value, /)
+     |      Return value-self.
+     |  
+     |  __rtruediv__(self, value, /)
+     |      Return value/self.
+     |  
+     |  __rxor__(self, value, /)
+     |      Return value^self.
+     |  
+     |  __sizeof__(self, /)
+     |      Returns size in memory, in bytes.
+     |  
+     |  __sub__(self, value, /)
+     |      Return self-value.
+     |  
+     |  __truediv__(self, value, /)
+     |      Return self/value.
+     |  
+     |  __trunc__(...)
+     |      Truncating an Integral returns itself.
+     |  
+     |  __xor__(self, value, /)
+     |      Return self^value.
+     |  
+     |  bit_length(self, /)
+     |      Number of bits necessary to represent self in binary.
+     |      
+     |      >>> bin(37)
+     |      '0b100101'
+     |      >>> (37).bit_length()
+     |      6
+     |  
+     |  conjugate(...)
+     |      Returns self, the complex conjugate of any int.
+     |  
+     |  to_bytes(self, /, length, byteorder, *, signed=False)
+     |      Return an array of bytes representing an integer.
+     |      
+     |      length
+     |        Length of bytes object to use.  An OverflowError is raised if the
+     |        integer is not representable with the given number of bytes.
+     |      byteorder
+     |        The byte order used to represent the integer.  If byteorder is 'big',
+     |        the most significant byte is at the beginning of the byte array.  If
+     |        byteorder is 'little', the most significant byte is at the end of the
+     |        byte array.  To request the native byte order of the host system, use
+     |        `sys.byteorder' as the byte order value.
+     |      signed
+     |        Determines whether two's complement is used to represent the integer.
+     |        If signed is False and a negative integer is given, an OverflowError
+     |        is raised.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Class methods inherited from builtins.int:
+     |  
+     |  from_bytes(bytes, byteorder, *, signed=False) from builtins.type
+     |      Return the integer represented by the given array of bytes.
+     |      
+     |      bytes
+     |        Holds the array of bytes to convert.  The argument must either
+     |        support the buffer protocol or be an iterable object producing bytes.
+     |        Bytes and bytearray are examples of built-in objects that support the
+     |        buffer protocol.
+     |      byteorder
+     |        The byte order used to represent the integer.  If byteorder is 'big',
+     |        the most significant byte is at the beginning of the byte array.  If
+     |        byteorder is 'little', the most significant byte is at the end of the
+     |        byte array.  To request the native byte order of the host system, use
+     |        `sys.byteorder' as the byte order value.
+     |      signed
+     |        Indicates whether two's complement is used to represent the integer.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from builtins.int:
+     |  
+     |  __new__(*args, **kwargs) from builtins.type
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from builtins.int:
+     |  
+     |  denominator
+     |      the denominator of a rational number in lowest terms
+     |  
+     |  imag
+     |      the imaginary part of a complex number
+     |  
+     |  numerator
+     |      the numerator of a rational number in lowest terms
+     |  
+     |  real
+     |      the real part of a complex number
+    
+    class LoggingSeverityLevel(Boost.Python.enum)
+     |  int([x]) -> integer
+     |  int(x, base=10) -> integer
+     |  
+     |  Convert a number or string to an integer, or return 0 if no arguments
+     |  are given.  If x is a number, return x.__int__().  For floating point
+     |  numbers, this truncates towards zero.
+     |  
+     |  If x is not a number or if base is given, then x must be a string,
+     |  bytes, or bytearray instance representing an integer literal in the
+     |  given base.  The literal can be preceded by '+' or '-' and be surrounded
+     |  by whitespace.  The base defaults to 10.  Valid bases are 0 and 2-36.
+     |  Base 0 means to interpret the base from the string as an integer literal.
+     |  >>> int('0b100', base=0)
+     |  4
+     |  
+     |  Method resolution order:
+     |      LoggingSeverityLevel
+     |      Boost.Python.enum
+     |      builtins.int
+     |      builtins.object
+     |  
+     |  Data and other attributes defined here:
+     |  
+     |  LOG_ALL = MalmoPython.LoggingSeverityLevel.LOG_ALL
+     |  
+     |  LOG_ERRORS = MalmoPython.LoggingSeverityLevel.LOG_ERRORS
+     |  
+     |  LOG_FINE = MalmoPython.LoggingSeverityLevel.LOG_FINE
+     |  
+     |  LOG_INFO = MalmoPython.LoggingSeverityLevel.LOG_INFO
+     |  
+     |  LOG_OFF = MalmoPython.LoggingSeverityLevel.LOG_OFF
+     |  
+     |  LOG_TRACE = MalmoPython.LoggingSeverityLevel.LOG_TRACE
+     |  
+     |  LOG_WARNINGS = MalmoPython.LoggingSeverityLevel.LOG_WARNINGS
+     |  
+     |  names = {'LOG_ALL': MalmoPython.LoggingSeverityLevel.LOG_ALL, 'LOG_ERR...
+     |  
+     |  values = {0: MalmoPython.LoggingSeverityLevel.LOG_OFF, 1: MalmoPython....
+     |  
+     |  ----------------------------------------------------------------------
+     |  Methods inherited from Boost.Python.enum:
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  __str__(self, /)
+     |      Return str(self).
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from Boost.Python.enum:
+     |  
+     |  name
+     |  
+     |  ----------------------------------------------------------------------
+     |  Methods inherited from builtins.int:
+     |  
+     |  __abs__(self, /)
+     |      abs(self)
+     |  
+     |  __add__(self, value, /)
+     |      Return self+value.
+     |  
+     |  __and__(self, value, /)
+     |      Return self&value.
+     |  
+     |  __bool__(self, /)
+     |      self != 0
+     |  
+     |  __ceil__(...)
+     |      Ceiling of an Integral returns itself.
+     |  
+     |  __divmod__(self, value, /)
+     |      Return divmod(self, value).
+     |  
+     |  __eq__(self, value, /)
+     |      Return self==value.
+     |  
+     |  __float__(self, /)
+     |      float(self)
+     |  
+     |  __floor__(...)
+     |      Flooring an Integral returns itself.
+     |  
+     |  __floordiv__(self, value, /)
+     |      Return self//value.
+     |  
+     |  __format__(self, format_spec, /)
+     |      Default object formatter.
+     |  
+     |  __ge__(self, value, /)
+     |      Return self>=value.
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __getnewargs__(self, /)
+     |  
+     |  __gt__(self, value, /)
+     |      Return self>value.
+     |  
+     |  __hash__(self, /)
+     |      Return hash(self).
+     |  
+     |  __index__(self, /)
+     |      Return self converted to an integer, if self is suitable for use as an index into a list.
+     |  
+     |  __int__(self, /)
+     |      int(self)
+     |  
+     |  __invert__(self, /)
+     |      ~self
+     |  
+     |  __le__(self, value, /)
+     |      Return self<=value.
+     |  
+     |  __lshift__(self, value, /)
+     |      Return self<<value.
+     |  
+     |  __lt__(self, value, /)
+     |      Return self<value.
+     |  
+     |  __mod__(self, value, /)
+     |      Return self%value.
+     |  
+     |  __mul__(self, value, /)
+     |      Return self*value.
+     |  
+     |  __ne__(self, value, /)
+     |      Return self!=value.
+     |  
+     |  __neg__(self, /)
+     |      -self
+     |  
+     |  __or__(self, value, /)
+     |      Return self|value.
+     |  
+     |  __pos__(self, /)
+     |      +self
+     |  
+     |  __pow__(self, value, mod=None, /)
+     |      Return pow(self, value, mod).
+     |  
+     |  __radd__(self, value, /)
+     |      Return value+self.
+     |  
+     |  __rand__(self, value, /)
+     |      Return value&self.
+     |  
+     |  __rdivmod__(self, value, /)
+     |      Return divmod(value, self).
+     |  
+     |  __rfloordiv__(self, value, /)
+     |      Return value//self.
+     |  
+     |  __rlshift__(self, value, /)
+     |      Return value<<self.
+     |  
+     |  __rmod__(self, value, /)
+     |      Return value%self.
+     |  
+     |  __rmul__(self, value, /)
+     |      Return value*self.
+     |  
+     |  __ror__(self, value, /)
+     |      Return value|self.
+     |  
+     |  __round__(...)
+     |      Rounding an Integral returns itself.
+     |      Rounding with an ndigits argument also returns an integer.
+     |  
+     |  __rpow__(self, value, mod=None, /)
+     |      Return pow(value, self, mod).
+     |  
+     |  __rrshift__(self, value, /)
+     |      Return value>>self.
+     |  
+     |  __rshift__(self, value, /)
+     |      Return self>>value.
+     |  
+     |  __rsub__(self, value, /)
+     |      Return value-self.
+     |  
+     |  __rtruediv__(self, value, /)
+     |      Return value/self.
+     |  
+     |  __rxor__(self, value, /)
+     |      Return value^self.
+     |  
+     |  __sizeof__(self, /)
+     |      Returns size in memory, in bytes.
+     |  
+     |  __sub__(self, value, /)
+     |      Return self-value.
+     |  
+     |  __truediv__(self, value, /)
+     |      Return self/value.
+     |  
+     |  __trunc__(...)
+     |      Truncating an Integral returns itself.
+     |  
+     |  __xor__(self, value, /)
+     |      Return self^value.
+     |  
+     |  bit_length(self, /)
+     |      Number of bits necessary to represent self in binary.
+     |      
+     |      >>> bin(37)
+     |      '0b100101'
+     |      >>> (37).bit_length()
+     |      6
+     |  
+     |  conjugate(...)
+     |      Returns self, the complex conjugate of any int.
+     |  
+     |  to_bytes(self, /, length, byteorder, *, signed=False)
+     |      Return an array of bytes representing an integer.
+     |      
+     |      length
+     |        Length of bytes object to use.  An OverflowError is raised if the
+     |        integer is not representable with the given number of bytes.
+     |      byteorder
+     |        The byte order used to represent the integer.  If byteorder is 'big',
+     |        the most significant byte is at the beginning of the byte array.  If
+     |        byteorder is 'little', the most significant byte is at the end of the
+     |        byte array.  To request the native byte order of the host system, use
+     |        `sys.byteorder' as the byte order value.
+     |      signed
+     |        Determines whether two's complement is used to represent the integer.
+     |        If signed is False and a negative integer is given, an OverflowError
+     |        is raised.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Class methods inherited from builtins.int:
+     |  
+     |  from_bytes(bytes, byteorder, *, signed=False) from builtins.type
+     |      Return the integer represented by the given array of bytes.
+     |      
+     |      bytes
+     |        Holds the array of bytes to convert.  The argument must either
+     |        support the buffer protocol or be an iterable object producing bytes.
+     |        Bytes and bytearray are examples of built-in objects that support the
+     |        buffer protocol.
+     |      byteorder
+     |        The byte order used to represent the integer.  If byteorder is 'big',
+     |        the most significant byte is at the beginning of the byte array.  If
+     |        byteorder is 'little', the most significant byte is at the end of the
+     |        byte array.  To request the native byte order of the host system, use
+     |        `sys.byteorder' as the byte order value.
+     |      signed
+     |        Indicates whether two's complement is used to represent the integer.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from builtins.int:
+     |  
+     |  __new__(*args, **kwargs) from builtins.type
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from builtins.int:
+     |  
+     |  denominator
+     |      the denominator of a rational number in lowest terms
+     |  
+     |  imag
+     |      the imaginary part of a complex number
+     |  
+     |  numerator
+     |      the numerator of a rational number in lowest terms
+     |  
+     |  real
+     |      the real part of a complex number
+    
+    class MissionErrorCode(Boost.Python.enum)
+     |  int([x]) -> integer
+     |  int(x, base=10) -> integer
+     |  
+     |  Convert a number or string to an integer, or return 0 if no arguments
+     |  are given.  If x is a number, return x.__int__().  For floating point
+     |  numbers, this truncates towards zero.
+     |  
+     |  If x is not a number or if base is given, then x must be a string,
+     |  bytes, or bytearray instance representing an integer literal in the
+     |  given base.  The literal can be preceded by '+' or '-' and be surrounded
+     |  by whitespace.  The base defaults to 10.  Valid bases are 0 and 2-36.
+     |  Base 0 means to interpret the base from the string as an integer literal.
+     |  >>> int('0b100', base=0)
+     |  4
+     |  
+     |  Method resolution order:
+     |      MissionErrorCode
+     |      Boost.Python.enum
+     |      builtins.int
+     |      builtins.object
+     |  
+     |  Data and other attributes defined here:
+     |  
+     |  MISSION_ALREADY_RUNNING = MalmoPython.MissionErrorCode.MISSION_ALREADY...
+     |  
+     |  MISSION_BAD_INSTALLATION = MalmoPython.MissionErrorCode.MISSION_BAD_IN...
+     |  
+     |  MISSION_BAD_ROLE_REQUEST = MalmoPython.MissionErrorCode.MISSION_BAD_RO...
+     |  
+     |  MISSION_BAD_VIDEO_REQUEST = MalmoPython.MissionErrorCode.MISSION_BAD_V...
+     |  
+     |  MISSION_CAN_NOT_KILL_BUSY_CLIENT = MalmoPython.MissionErrorCode.MISSIO...
+     |  
+     |  MISSION_CAN_NOT_KILL_IRREPLACEABLE_CLIENT = MalmoPython.MissionErrorCo...
+     |  
+     |  MISSION_INSUFFICIENT_CLIENTS_AVAILABLE = MalmoPython.MissionErrorCode....
+     |  
+     |  MISSION_NO_COMMAND_PORT = MalmoPython.MissionErrorCode.MISSION_NO_COMM...
+     |  
+     |  MISSION_SERVER_NOT_FOUND = MalmoPython.MissionErrorCode.MISSION_SERVER...
+     |  
+     |  MISSION_SERVER_WARMING_UP = MalmoPython.MissionErrorCode.MISSION_SERVE...
+     |  
+     |  MISSION_TRANSMISSION_ERROR = MalmoPython.MissionErrorCode.MISSION_TRAN...
+     |  
+     |  names = {'MISSION_ALREADY_RUNNING': MalmoPython.MissionErrorCode.MISSI...
+     |  
+     |  values = {0: MalmoPython.MissionErrorCode.MISSION_BAD_ROLE_REQUEST, 1:...
+     |  
+     |  ----------------------------------------------------------------------
+     |  Methods inherited from Boost.Python.enum:
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  __str__(self, /)
+     |      Return str(self).
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from Boost.Python.enum:
+     |  
+     |  name
+     |  
+     |  ----------------------------------------------------------------------
+     |  Methods inherited from builtins.int:
+     |  
+     |  __abs__(self, /)
+     |      abs(self)
+     |  
+     |  __add__(self, value, /)
+     |      Return self+value.
+     |  
+     |  __and__(self, value, /)
+     |      Return self&value.
+     |  
+     |  __bool__(self, /)
+     |      self != 0
+     |  
+     |  __ceil__(...)
+     |      Ceiling of an Integral returns itself.
+     |  
+     |  __divmod__(self, value, /)
+     |      Return divmod(self, value).
+     |  
+     |  __eq__(self, value, /)
+     |      Return self==value.
+     |  
+     |  __float__(self, /)
+     |      float(self)
+     |  
+     |  __floor__(...)
+     |      Flooring an Integral returns itself.
+     |  
+     |  __floordiv__(self, value, /)
+     |      Return self//value.
+     |  
+     |  __format__(self, format_spec, /)
+     |      Default object formatter.
+     |  
+     |  __ge__(self, value, /)
+     |      Return self>=value.
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __getnewargs__(self, /)
+     |  
+     |  __gt__(self, value, /)
+     |      Return self>value.
+     |  
+     |  __hash__(self, /)
+     |      Return hash(self).
+     |  
+     |  __index__(self, /)
+     |      Return self converted to an integer, if self is suitable for use as an index into a list.
+     |  
+     |  __int__(self, /)
+     |      int(self)
+     |  
+     |  __invert__(self, /)
+     |      ~self
+     |  
+     |  __le__(self, value, /)
+     |      Return self<=value.
+     |  
+     |  __lshift__(self, value, /)
+     |      Return self<<value.
+     |  
+     |  __lt__(self, value, /)
+     |      Return self<value.
+     |  
+     |  __mod__(self, value, /)
+     |      Return self%value.
+     |  
+     |  __mul__(self, value, /)
+     |      Return self*value.
+     |  
+     |  __ne__(self, value, /)
+     |      Return self!=value.
+     |  
+     |  __neg__(self, /)
+     |      -self
+     |  
+     |  __or__(self, value, /)
+     |      Return self|value.
+     |  
+     |  __pos__(self, /)
+     |      +self
+     |  
+     |  __pow__(self, value, mod=None, /)
+     |      Return pow(self, value, mod).
+     |  
+     |  __radd__(self, value, /)
+     |      Return value+self.
+     |  
+     |  __rand__(self, value, /)
+     |      Return value&self.
+     |  
+     |  __rdivmod__(self, value, /)
+     |      Return divmod(value, self).
+     |  
+     |  __rfloordiv__(self, value, /)
+     |      Return value//self.
+     |  
+     |  __rlshift__(self, value, /)
+     |      Return value<<self.
+     |  
+     |  __rmod__(self, value, /)
+     |      Return value%self.
+     |  
+     |  __rmul__(self, value, /)
+     |      Return value*self.
+     |  
+     |  __ror__(self, value, /)
+     |      Return value|self.
+     |  
+     |  __round__(...)
+     |      Rounding an Integral returns itself.
+     |      Rounding with an ndigits argument also returns an integer.
+     |  
+     |  __rpow__(self, value, mod=None, /)
+     |      Return pow(value, self, mod).
+     |  
+     |  __rrshift__(self, value, /)
+     |      Return value>>self.
+     |  
+     |  __rshift__(self, value, /)
+     |      Return self>>value.
+     |  
+     |  __rsub__(self, value, /)
+     |      Return value-self.
+     |  
+     |  __rtruediv__(self, value, /)
+     |      Return value/self.
+     |  
+     |  __rxor__(self, value, /)
+     |      Return value^self.
+     |  
+     |  __sizeof__(self, /)
+     |      Returns size in memory, in bytes.
+     |  
+     |  __sub__(self, value, /)
+     |      Return self-value.
+     |  
+     |  __truediv__(self, value, /)
+     |      Return self/value.
+     |  
+     |  __trunc__(...)
+     |      Truncating an Integral returns itself.
+     |  
+     |  __xor__(self, value, /)
+     |      Return self^value.
+     |  
+     |  bit_length(self, /)
+     |      Number of bits necessary to represent self in binary.
+     |      
+     |      >>> bin(37)
+     |      '0b100101'
+     |      >>> (37).bit_length()
+     |      6
+     |  
+     |  conjugate(...)
+     |      Returns self, the complex conjugate of any int.
+     |  
+     |  to_bytes(self, /, length, byteorder, *, signed=False)
+     |      Return an array of bytes representing an integer.
+     |      
+     |      length
+     |        Length of bytes object to use.  An OverflowError is raised if the
+     |        integer is not representable with the given number of bytes.
+     |      byteorder
+     |        The byte order used to represent the integer.  If byteorder is 'big',
+     |        the most significant byte is at the beginning of the byte array.  If
+     |        byteorder is 'little', the most significant byte is at the end of the
+     |        byte array.  To request the native byte order of the host system, use
+     |        `sys.byteorder' as the byte order value.
+     |      signed
+     |        Determines whether two's complement is used to represent the integer.
+     |        If signed is False and a negative integer is given, an OverflowError
+     |        is raised.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Class methods inherited from builtins.int:
+     |  
+     |  from_bytes(bytes, byteorder, *, signed=False) from builtins.type
+     |      Return the integer represented by the given array of bytes.
+     |      
+     |      bytes
+     |        Holds the array of bytes to convert.  The argument must either
+     |        support the buffer protocol or be an iterable object producing bytes.
+     |        Bytes and bytearray are examples of built-in objects that support the
+     |        buffer protocol.
+     |      byteorder
+     |        The byte order used to represent the integer.  If byteorder is 'big',
+     |        the most significant byte is at the beginning of the byte array.  If
+     |        byteorder is 'little', the most significant byte is at the end of the
+     |        byte array.  To request the native byte order of the host system, use
+     |        `sys.byteorder' as the byte order value.
+     |      signed
+     |        Indicates whether two's complement is used to represent the integer.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from builtins.int:
+     |  
+     |  __new__(*args, **kwargs) from builtins.type
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from builtins.int:
+     |  
+     |  denominator
+     |      the denominator of a rational number in lowest terms
+     |  
+     |  imag
+     |      the imaginary part of a complex number
+     |  
+     |  numerator
+     |      the numerator of a rational number in lowest terms
+     |  
+     |  real
+     |      the real part of a complex number
+    
+    class MissionException(builtins.RuntimeError)
+     |  Unspecified run-time error.
+     |  
+     |  Method resolution order:
+     |      MissionException
+     |      builtins.RuntimeError
+     |      builtins.Exception
+     |      builtins.BaseException
+     |      builtins.object
+     |  
+     |  Data descriptors defined here:
+     |  
+     |  __weakref__
+     |      list of weak references to the object (if defined)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Methods inherited from builtins.RuntimeError:
+     |  
+     |  __init__(self, /, *args, **kwargs)
+     |      Initialize self.  See help(type(self)) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from builtins.RuntimeError:
+     |  
+     |  __new__(*args, **kwargs) from builtins.type
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Methods inherited from builtins.BaseException:
+     |  
+     |  __delattr__(self, name, /)
+     |      Implement delattr(self, name).
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __reduce__(...)
+     |      Helper for pickle.
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  __setattr__(self, name, value, /)
+     |      Implement setattr(self, name, value).
+     |  
+     |  __setstate__(...)
+     |  
+     |  __str__(self, /)
+     |      Return str(self).
+     |  
+     |  with_traceback(...)
+     |      Exception.with_traceback(tb) --
+     |      set self.__traceback__ to tb and return self.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from builtins.BaseException:
+     |  
+     |  __cause__
+     |      exception cause
+     |  
+     |  __context__
+     |      exception context
+     |  
+     |  __dict__
+     |  
+     |  __suppress_context__
+     |  
+     |  __traceback__
+     |  
+     |  args
+    
+    class MissionExceptionDetails(Boost.Python.instance)
+     |  Method resolution order:
+     |      MissionExceptionDetails
+     |      Boost.Python.instance
+     |      builtins.object
+     |  
+     |  Static methods defined here:
+     |  
+     |  __init__(...)
+     |      __init__( (object)arg1, (str)arg2, (MissionErrorCode)arg3) -> None :
+     |      
+     |          C++ signature :
+     |              void __init__(struct _object * __ptr64,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,enum malmo::MissionException::MissionErrorCode)
+     |  
+     |  __reduce__ = <unnamed Boost.Python function>(...)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  errorCode
+     |  
+     |  message
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  __instance_size__ = 80
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from Boost.Python.instance:
+     |  
+     |  __new__(*args, **kwargs) from Boost.Python.class
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from Boost.Python.instance:
+     |  
+     |  __dict__
+     |  
+     |  __weakref__
+    
+    class MissionRecordSpec(Boost.Python.instance)
+     |  Method resolution order:
+     |      MissionRecordSpec
+     |      Boost.Python.instance
+     |      builtins.object
+     |  
+     |  Static methods defined here:
+     |  
+     |  __init__(...)
+     |      __init__( (object)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void __init__(struct _object * __ptr64)
+     |      
+     |      __init__( (object)arg1, (str)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void __init__(struct _object * __ptr64,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  __reduce__ = <unnamed Boost.Python function>(...)
+     |  
+     |  __str__(...)
+     |      __str__( (MissionRecordSpec)arg1) -> object :
+     |      
+     |          C++ signature :
+     |              struct _object * __ptr64 __str__(struct malmo::MissionRecordSpec {lvalue})
+     |  
+     |  recordBitmaps(...)
+     |      recordBitmaps( (MissionRecordSpec)arg1, (FrameType)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void recordBitmaps(struct malmo::MissionRecordSpec {lvalue},enum malmo::TimestampedVideoFrame::FrameType)
+     |  
+     |  recordCommands(...)
+     |      recordCommands( (MissionRecordSpec)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void recordCommands(struct malmo::MissionRecordSpec {lvalue})
+     |  
+     |  recordMP4(...)
+     |      recordMP4( (MissionRecordSpec)arg1, (int)arg2, (int)arg3) -> None :
+     |      
+     |          C++ signature :
+     |              void recordMP4(struct malmo::MissionRecordSpec {lvalue},int,__int64)
+     |      
+     |      recordMP4( (MissionRecordSpec)arg1, (FrameType)arg2, (int)arg3, (int)arg4, (bool)arg5) -> None :
+     |      
+     |          C++ signature :
+     |              void recordMP4(struct malmo::MissionRecordSpec {lvalue},enum malmo::TimestampedVideoFrame::FrameType,int,__int64,bool)
+     |  
+     |  recordObservations(...)
+     |      recordObservations( (MissionRecordSpec)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void recordObservations(struct malmo::MissionRecordSpec {lvalue})
+     |  
+     |  recordRewards(...)
+     |      recordRewards( (MissionRecordSpec)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void recordRewards(struct malmo::MissionRecordSpec {lvalue})
+     |  
+     |  setDestination(...)
+     |      setDestination( (MissionRecordSpec)arg1, (str)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void setDestination(struct malmo::MissionRecordSpec {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  __instance_size__ = 104
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from Boost.Python.instance:
+     |  
+     |  __new__(*args, **kwargs) from Boost.Python.class
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from Boost.Python.instance:
+     |  
+     |  __dict__
+     |  
+     |  __weakref__
+    
+    class MissionSpec(Boost.Python.instance)
+     |  Method resolution order:
+     |      MissionSpec
+     |      Boost.Python.instance
+     |      builtins.object
+     |  
+     |  Static methods defined here:
+     |  
+     |  __init__(...)
+     |      __init__( (object)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void __init__(struct _object * __ptr64)
+     |      
+     |      __init__( (object)arg1, (str)arg2, (bool)arg3) -> None :
+     |      
+     |          C++ signature :
+     |              void __init__(struct _object * __ptr64,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,bool)
+     |  
+     |  __reduce__ = <unnamed Boost.Python function>(...)
+     |  
+     |  __str__(...)
+     |      __str__( (MissionSpec)arg1) -> object :
+     |      
+     |          C++ signature :
+     |              struct _object * __ptr64 __str__(class malmo::MissionSpec {lvalue})
+     |  
+     |  allowAbsoluteMovementCommand(...)
+     |      allowAbsoluteMovementCommand( (MissionSpec)arg1, (str)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void allowAbsoluteMovementCommand(class malmo::MissionSpec {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  allowAllAbsoluteMovementCommands(...)
+     |      allowAllAbsoluteMovementCommands( (MissionSpec)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void allowAllAbsoluteMovementCommands(class malmo::MissionSpec {lvalue})
+     |  
+     |  allowAllChatCommands(...)
+     |      allowAllChatCommands( (MissionSpec)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void allowAllChatCommands(class malmo::MissionSpec {lvalue})
+     |  
+     |  allowAllContinuousMovementCommands(...)
+     |      allowAllContinuousMovementCommands( (MissionSpec)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void allowAllContinuousMovementCommands(class malmo::MissionSpec {lvalue})
+     |  
+     |  allowAllDiscreteMovementCommands(...)
+     |      allowAllDiscreteMovementCommands( (MissionSpec)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void allowAllDiscreteMovementCommands(class malmo::MissionSpec {lvalue})
+     |  
+     |  allowAllInventoryCommands(...)
+     |      allowAllInventoryCommands( (MissionSpec)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void allowAllInventoryCommands(class malmo::MissionSpec {lvalue})
+     |  
+     |  allowContinuousMovementCommand(...)
+     |      allowContinuousMovementCommand( (MissionSpec)arg1, (str)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void allowContinuousMovementCommand(class malmo::MissionSpec {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  allowDiscreteMovementCommand(...)
+     |      allowDiscreteMovementCommand( (MissionSpec)arg1, (str)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void allowDiscreteMovementCommand(class malmo::MissionSpec {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  allowInventoryCommand(...)
+     |      allowInventoryCommand( (MissionSpec)arg1, (str)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void allowInventoryCommand(class malmo::MissionSpec {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  createDefaultTerrain(...)
+     |      createDefaultTerrain( (MissionSpec)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void createDefaultTerrain(class malmo::MissionSpec {lvalue})
+     |  
+     |  drawBlock(...)
+     |      drawBlock( (MissionSpec)arg1, (int)arg2, (int)arg3, (int)arg4, (str)arg5) -> None :
+     |      
+     |          C++ signature :
+     |              void drawBlock(class malmo::MissionSpec {lvalue},int,int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  drawCuboid(...)
+     |      drawCuboid( (MissionSpec)arg1, (int)arg2, (int)arg3, (int)arg4, (int)arg5, (int)arg6, (int)arg7, (str)arg8) -> None :
+     |      
+     |          C++ signature :
+     |              void drawCuboid(class malmo::MissionSpec {lvalue},int,int,int,int,int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  drawItem(...)
+     |      drawItem( (MissionSpec)arg1, (int)arg2, (int)arg3, (int)arg4, (str)arg5) -> None :
+     |      
+     |          C++ signature :
+     |              void drawItem(class malmo::MissionSpec {lvalue},int,int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  drawLine(...)
+     |      drawLine( (MissionSpec)arg1, (int)arg2, (int)arg3, (int)arg4, (int)arg5, (int)arg6, (int)arg7, (str)arg8) -> None :
+     |      
+     |          C++ signature :
+     |              void drawLine(class malmo::MissionSpec {lvalue},int,int,int,int,int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  drawSphere(...)
+     |      drawSphere( (MissionSpec)arg1, (int)arg2, (int)arg3, (int)arg4, (int)arg5, (str)arg6) -> None :
+     |      
+     |          C++ signature :
+     |              void drawSphere(class malmo::MissionSpec {lvalue},int,int,int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  endAt(...)
+     |      endAt( (MissionSpec)arg1, (float)arg2, (float)arg3, (float)arg4, (float)arg5) -> None :
+     |      
+     |          C++ signature :
+     |              void endAt(class malmo::MissionSpec {lvalue},float,float,float,float)
+     |  
+     |  forceWorldReset(...)
+     |      forceWorldReset( (MissionSpec)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void forceWorldReset(class malmo::MissionSpec {lvalue})
+     |  
+     |  getAllowedCommands(...)
+     |      getAllowedCommands( (MissionSpec)arg1, (int)arg2, (str)arg3) -> StringVector :
+     |      
+     |          C++ signature :
+     |              class std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > getAllowedCommands(class malmo::MissionSpec {lvalue},int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  getAsXML(...)
+     |      getAsXML( (MissionSpec)arg1, (bool)arg2) -> str :
+     |      
+     |          C++ signature :
+     |              class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > getAsXML(class malmo::MissionSpec {lvalue},bool)
+     |  
+     |  getListOfCommandHandlers(...)
+     |      getListOfCommandHandlers( (MissionSpec)arg1, (int)arg2) -> StringVector :
+     |      
+     |          C++ signature :
+     |              class std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > getListOfCommandHandlers(class malmo::MissionSpec {lvalue},int)
+     |  
+     |  getNumberOfAgents(...)
+     |      getNumberOfAgents( (MissionSpec)arg1) -> int :
+     |      
+     |          C++ signature :
+     |              int getNumberOfAgents(class malmo::MissionSpec {lvalue})
+     |  
+     |  getSummary(...)
+     |      getSummary( (MissionSpec)arg1) -> str :
+     |      
+     |          C++ signature :
+     |              class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > getSummary(class malmo::MissionSpec {lvalue})
+     |  
+     |  getVideoChannels(...)
+     |      getVideoChannels( (MissionSpec)arg1, (int)arg2) -> int :
+     |      
+     |          C++ signature :
+     |              int getVideoChannels(class malmo::MissionSpec {lvalue},int)
+     |  
+     |  getVideoHeight(...)
+     |      getVideoHeight( (MissionSpec)arg1, (int)arg2) -> int :
+     |      
+     |          C++ signature :
+     |              int getVideoHeight(class malmo::MissionSpec {lvalue},int)
+     |  
+     |  getVideoWidth(...)
+     |      getVideoWidth( (MissionSpec)arg1, (int)arg2) -> int :
+     |      
+     |          C++ signature :
+     |              int getVideoWidth(class malmo::MissionSpec {lvalue},int)
+     |  
+     |  isVideoRequested(...)
+     |      isVideoRequested( (MissionSpec)arg1, (int)arg2) -> bool :
+     |      
+     |          C++ signature :
+     |              bool isVideoRequested(class malmo::MissionSpec {lvalue},int)
+     |  
+     |  observeChat(...)
+     |      observeChat( (MissionSpec)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void observeChat(class malmo::MissionSpec {lvalue})
+     |  
+     |  observeDistance(...)
+     |      observeDistance( (MissionSpec)arg1, (float)arg2, (float)arg3, (float)arg4, (str)arg5) -> None :
+     |      
+     |          C++ signature :
+     |              void observeDistance(class malmo::MissionSpec {lvalue},float,float,float,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  observeFullInventory(...)
+     |      observeFullInventory( (MissionSpec)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void observeFullInventory(class malmo::MissionSpec {lvalue})
+     |  
+     |  observeGrid(...)
+     |      observeGrid( (MissionSpec)arg1, (int)arg2, (int)arg3, (int)arg4, (int)arg5, (int)arg6, (int)arg7, (str)arg8) -> None :
+     |      
+     |          C++ signature :
+     |              void observeGrid(class malmo::MissionSpec {lvalue},int,int,int,int,int,int,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  observeHotBar(...)
+     |      observeHotBar( (MissionSpec)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void observeHotBar(class malmo::MissionSpec {lvalue})
+     |  
+     |  observeRecentCommands(...)
+     |      observeRecentCommands( (MissionSpec)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void observeRecentCommands(class malmo::MissionSpec {lvalue})
+     |  
+     |  removeAllCommandHandlers(...)
+     |      removeAllCommandHandlers( (MissionSpec)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void removeAllCommandHandlers(class malmo::MissionSpec {lvalue})
+     |  
+     |  requestVideo(...)
+     |      requestVideo( (MissionSpec)arg1, (int)arg2, (int)arg3) -> None :
+     |      
+     |          C++ signature :
+     |              void requestVideo(class malmo::MissionSpec {lvalue},int,int)
+     |  
+     |  requestVideoWithDepth(...)
+     |      requestVideoWithDepth( (MissionSpec)arg1, (int)arg2, (int)arg3) -> None :
+     |      
+     |          C++ signature :
+     |              void requestVideoWithDepth(class malmo::MissionSpec {lvalue},int,int)
+     |  
+     |  rewardForReachingPosition(...)
+     |      rewardForReachingPosition( (MissionSpec)arg1, (float)arg2, (float)arg3, (float)arg4, (float)arg5, (float)arg6) -> None :
+     |      
+     |          C++ signature :
+     |              void rewardForReachingPosition(class malmo::MissionSpec {lvalue},float,float,float,float,float)
+     |  
+     |  setModeToCreative(...)
+     |      setModeToCreative( (MissionSpec)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void setModeToCreative(class malmo::MissionSpec {lvalue})
+     |  
+     |  setModeToSpectator(...)
+     |      setModeToSpectator( (MissionSpec)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void setModeToSpectator(class malmo::MissionSpec {lvalue})
+     |  
+     |  setSummary(...)
+     |      setSummary( (MissionSpec)arg1, (str)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void setSummary(class malmo::MissionSpec {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  setTimeOfDay(...)
+     |      setTimeOfDay( (MissionSpec)arg1, (int)arg2, (bool)arg3) -> None :
+     |      
+     |          C++ signature :
+     |              void setTimeOfDay(class malmo::MissionSpec {lvalue},int,bool)
+     |  
+     |  setViewpoint(...)
+     |      setViewpoint( (MissionSpec)arg1, (int)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void setViewpoint(class malmo::MissionSpec {lvalue},int)
+     |  
+     |  setWorldSeed(...)
+     |      setWorldSeed( (MissionSpec)arg1, (str)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void setWorldSeed(class malmo::MissionSpec {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  startAt(...)
+     |      startAt( (MissionSpec)arg1, (float)arg2, (float)arg3, (float)arg4) -> None :
+     |      
+     |          C++ signature :
+     |              void startAt(class malmo::MissionSpec {lvalue},float,float,float)
+     |  
+     |  startAtWithPitchAndYaw(...)
+     |      startAtWithPitchAndYaw( (MissionSpec)arg1, (float)arg2, (float)arg3, (float)arg4, (float)arg5, (float)arg6) -> None :
+     |      
+     |          C++ signature :
+     |              void startAtWithPitchAndYaw(class malmo::MissionSpec {lvalue},float,float,float,float,float)
+     |  
+     |  timeLimitInSeconds(...)
+     |      timeLimitInSeconds( (MissionSpec)arg1, (float)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void timeLimitInSeconds(class malmo::MissionSpec {lvalue},float)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  __instance_size__ = 88
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from Boost.Python.instance:
+     |  
+     |  __new__(*args, **kwargs) from Boost.Python.class
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from Boost.Python.instance:
+     |  
+     |  __dict__
+     |  
+     |  __weakref__
+    
+    class ObservationsPolicy(Boost.Python.enum)
+     |  int([x]) -> integer
+     |  int(x, base=10) -> integer
+     |  
+     |  Convert a number or string to an integer, or return 0 if no arguments
+     |  are given.  If x is a number, return x.__int__().  For floating point
+     |  numbers, this truncates towards zero.
+     |  
+     |  If x is not a number or if base is given, then x must be a string,
+     |  bytes, or bytearray instance representing an integer literal in the
+     |  given base.  The literal can be preceded by '+' or '-' and be surrounded
+     |  by whitespace.  The base defaults to 10.  Valid bases are 0 and 2-36.
+     |  Base 0 means to interpret the base from the string as an integer literal.
+     |  >>> int('0b100', base=0)
+     |  4
+     |  
+     |  Method resolution order:
+     |      ObservationsPolicy
+     |      Boost.Python.enum
+     |      builtins.int
+     |      builtins.object
+     |  
+     |  Data and other attributes defined here:
+     |  
+     |  KEEP_ALL_OBSERVATIONS = MalmoPython.ObservationsPolicy.KEEP_ALL_OBSERV...
+     |  
+     |  LATEST_OBSERVATION_ONLY = MalmoPython.ObservationsPolicy.LATEST_OBSERV...
+     |  
+     |  names = {'KEEP_ALL_OBSERVATIONS': MalmoPython.ObservationsPolicy.KEEP_...
+     |  
+     |  values = {0: MalmoPython.ObservationsPolicy.LATEST_OBSERVATION_ONLY, 1...
+     |  
+     |  ----------------------------------------------------------------------
+     |  Methods inherited from Boost.Python.enum:
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  __str__(self, /)
+     |      Return str(self).
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from Boost.Python.enum:
+     |  
+     |  name
+     |  
+     |  ----------------------------------------------------------------------
+     |  Methods inherited from builtins.int:
+     |  
+     |  __abs__(self, /)
+     |      abs(self)
+     |  
+     |  __add__(self, value, /)
+     |      Return self+value.
+     |  
+     |  __and__(self, value, /)
+     |      Return self&value.
+     |  
+     |  __bool__(self, /)
+     |      self != 0
+     |  
+     |  __ceil__(...)
+     |      Ceiling of an Integral returns itself.
+     |  
+     |  __divmod__(self, value, /)
+     |      Return divmod(self, value).
+     |  
+     |  __eq__(self, value, /)
+     |      Return self==value.
+     |  
+     |  __float__(self, /)
+     |      float(self)
+     |  
+     |  __floor__(...)
+     |      Flooring an Integral returns itself.
+     |  
+     |  __floordiv__(self, value, /)
+     |      Return self//value.
+     |  
+     |  __format__(self, format_spec, /)
+     |      Default object formatter.
+     |  
+     |  __ge__(self, value, /)
+     |      Return self>=value.
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __getnewargs__(self, /)
+     |  
+     |  __gt__(self, value, /)
+     |      Return self>value.
+     |  
+     |  __hash__(self, /)
+     |      Return hash(self).
+     |  
+     |  __index__(self, /)
+     |      Return self converted to an integer, if self is suitable for use as an index into a list.
+     |  
+     |  __int__(self, /)
+     |      int(self)
+     |  
+     |  __invert__(self, /)
+     |      ~self
+     |  
+     |  __le__(self, value, /)
+     |      Return self<=value.
+     |  
+     |  __lshift__(self, value, /)
+     |      Return self<<value.
+     |  
+     |  __lt__(self, value, /)
+     |      Return self<value.
+     |  
+     |  __mod__(self, value, /)
+     |      Return self%value.
+     |  
+     |  __mul__(self, value, /)
+     |      Return self*value.
+     |  
+     |  __ne__(self, value, /)
+     |      Return self!=value.
+     |  
+     |  __neg__(self, /)
+     |      -self
+     |  
+     |  __or__(self, value, /)
+     |      Return self|value.
+     |  
+     |  __pos__(self, /)
+     |      +self
+     |  
+     |  __pow__(self, value, mod=None, /)
+     |      Return pow(self, value, mod).
+     |  
+     |  __radd__(self, value, /)
+     |      Return value+self.
+     |  
+     |  __rand__(self, value, /)
+     |      Return value&self.
+     |  
+     |  __rdivmod__(self, value, /)
+     |      Return divmod(value, self).
+     |  
+     |  __rfloordiv__(self, value, /)
+     |      Return value//self.
+     |  
+     |  __rlshift__(self, value, /)
+     |      Return value<<self.
+     |  
+     |  __rmod__(self, value, /)
+     |      Return value%self.
+     |  
+     |  __rmul__(self, value, /)
+     |      Return value*self.
+     |  
+     |  __ror__(self, value, /)
+     |      Return value|self.
+     |  
+     |  __round__(...)
+     |      Rounding an Integral returns itself.
+     |      Rounding with an ndigits argument also returns an integer.
+     |  
+     |  __rpow__(self, value, mod=None, /)
+     |      Return pow(value, self, mod).
+     |  
+     |  __rrshift__(self, value, /)
+     |      Return value>>self.
+     |  
+     |  __rshift__(self, value, /)
+     |      Return self>>value.
+     |  
+     |  __rsub__(self, value, /)
+     |      Return value-self.
+     |  
+     |  __rtruediv__(self, value, /)
+     |      Return value/self.
+     |  
+     |  __rxor__(self, value, /)
+     |      Return value^self.
+     |  
+     |  __sizeof__(self, /)
+     |      Returns size in memory, in bytes.
+     |  
+     |  __sub__(self, value, /)
+     |      Return self-value.
+     |  
+     |  __truediv__(self, value, /)
+     |      Return self/value.
+     |  
+     |  __trunc__(...)
+     |      Truncating an Integral returns itself.
+     |  
+     |  __xor__(self, value, /)
+     |      Return self^value.
+     |  
+     |  bit_length(self, /)
+     |      Number of bits necessary to represent self in binary.
+     |      
+     |      >>> bin(37)
+     |      '0b100101'
+     |      >>> (37).bit_length()
+     |      6
+     |  
+     |  conjugate(...)
+     |      Returns self, the complex conjugate of any int.
+     |  
+     |  to_bytes(self, /, length, byteorder, *, signed=False)
+     |      Return an array of bytes representing an integer.
+     |      
+     |      length
+     |        Length of bytes object to use.  An OverflowError is raised if the
+     |        integer is not representable with the given number of bytes.
+     |      byteorder
+     |        The byte order used to represent the integer.  If byteorder is 'big',
+     |        the most significant byte is at the beginning of the byte array.  If
+     |        byteorder is 'little', the most significant byte is at the end of the
+     |        byte array.  To request the native byte order of the host system, use
+     |        `sys.byteorder' as the byte order value.
+     |      signed
+     |        Determines whether two's complement is used to represent the integer.
+     |        If signed is False and a negative integer is given, an OverflowError
+     |        is raised.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Class methods inherited from builtins.int:
+     |  
+     |  from_bytes(bytes, byteorder, *, signed=False) from builtins.type
+     |      Return the integer represented by the given array of bytes.
+     |      
+     |      bytes
+     |        Holds the array of bytes to convert.  The argument must either
+     |        support the buffer protocol or be an iterable object producing bytes.
+     |        Bytes and bytearray are examples of built-in objects that support the
+     |        buffer protocol.
+     |      byteorder
+     |        The byte order used to represent the integer.  If byteorder is 'big',
+     |        the most significant byte is at the beginning of the byte array.  If
+     |        byteorder is 'little', the most significant byte is at the end of the
+     |        byte array.  To request the native byte order of the host system, use
+     |        `sys.byteorder' as the byte order value.
+     |      signed
+     |        Indicates whether two's complement is used to represent the integer.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from builtins.int:
+     |  
+     |  __new__(*args, **kwargs) from builtins.type
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from builtins.int:
+     |  
+     |  denominator
+     |      the denominator of a rational number in lowest terms
+     |  
+     |  imag
+     |      the imaginary part of a complex number
+     |  
+     |  numerator
+     |      the numerator of a rational number in lowest terms
+     |  
+     |  real
+     |      the real part of a complex number
+    
+    class ParameterSet(Boost.Python.instance)
+     |  Method resolution order:
+     |      ParameterSet
+     |      Boost.Python.instance
+     |      builtins.object
+     |  
+     |  Static methods defined here:
+     |  
+     |  __init__(...)
+     |      __init__( (object)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void __init__(struct _object * __ptr64)
+     |      
+     |      __init__( (object)arg1, (str)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void __init__(struct _object * __ptr64,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  __reduce__ = <unnamed Boost.Python function>(...)
+     |  
+     |  get(...)
+     |      get( (ParameterSet)arg1, (str)arg2) -> str :
+     |      
+     |          C++ signature :
+     |              class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > get(class malmo::ParameterSet {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  getBool(...)
+     |      getBool( (ParameterSet)arg1, (str)arg2) -> bool :
+     |      
+     |          C++ signature :
+     |              bool getBool(class malmo::ParameterSet {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  getDouble(...)
+     |      getDouble( (ParameterSet)arg1, (str)arg2) -> float :
+     |      
+     |          C++ signature :
+     |              double getDouble(class malmo::ParameterSet {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  getInt(...)
+     |      getInt( (ParameterSet)arg1, (str)arg2) -> int :
+     |      
+     |          C++ signature :
+     |              int getInt(class malmo::ParameterSet {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  set(...)
+     |      set( (ParameterSet)arg1, (str)arg2, (str)arg3) -> None :
+     |      
+     |          C++ signature :
+     |              void set(class malmo::ParameterSet {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+     |  
+     |  setBool(...)
+     |      setBool( (ParameterSet)arg1, (str)arg2, (bool)arg3) -> None :
+     |      
+     |          C++ signature :
+     |              void setBool(class malmo::ParameterSet {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,bool)
+     |  
+     |  setDouble(...)
+     |      setDouble( (ParameterSet)arg1, (str)arg2, (float)arg3) -> None :
+     |      
+     |          C++ signature :
+     |              void setDouble(class malmo::ParameterSet {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,double)
+     |  
+     |  setInt(...)
+     |      setInt( (ParameterSet)arg1, (str)arg2, (int)arg3) -> None :
+     |      
+     |          C++ signature :
+     |              void setInt(class malmo::ParameterSet {lvalue},class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,int)
+     |  
+     |  toJson(...)
+     |      toJson( (ParameterSet)arg1) -> str :
+     |      
+     |          C++ signature :
+     |              class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > toJson(class malmo::ParameterSet {lvalue})
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  __instance_size__ = 64
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from Boost.Python.instance:
+     |  
+     |  __new__(*args, **kwargs) from Boost.Python.class
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from Boost.Python.instance:
+     |  
+     |  __dict__
+     |  
+     |  __weakref__
+    
+    class RewardsPolicy(Boost.Python.enum)
+     |  int([x]) -> integer
+     |  int(x, base=10) -> integer
+     |  
+     |  Convert a number or string to an integer, or return 0 if no arguments
+     |  are given.  If x is a number, return x.__int__().  For floating point
+     |  numbers, this truncates towards zero.
+     |  
+     |  If x is not a number or if base is given, then x must be a string,
+     |  bytes, or bytearray instance representing an integer literal in the
+     |  given base.  The literal can be preceded by '+' or '-' and be surrounded
+     |  by whitespace.  The base defaults to 10.  Valid bases are 0 and 2-36.
+     |  Base 0 means to interpret the base from the string as an integer literal.
+     |  >>> int('0b100', base=0)
+     |  4
+     |  
+     |  Method resolution order:
+     |      RewardsPolicy
+     |      Boost.Python.enum
+     |      builtins.int
+     |      builtins.object
+     |  
+     |  Data and other attributes defined here:
+     |  
+     |  KEEP_ALL_REWARDS = MalmoPython.RewardsPolicy.KEEP_ALL_REWARDS
+     |  
+     |  LATEST_REWARD_ONLY = MalmoPython.RewardsPolicy.LATEST_REWARD_ONLY
+     |  
+     |  SUM_REWARDS = MalmoPython.RewardsPolicy.SUM_REWARDS
+     |  
+     |  names = {'KEEP_ALL_REWARDS': MalmoPython.RewardsPolicy.KEEP_ALL_REWARD...
+     |  
+     |  values = {0: MalmoPython.RewardsPolicy.LATEST_REWARD_ONLY, 1: MalmoPyt...
+     |  
+     |  ----------------------------------------------------------------------
+     |  Methods inherited from Boost.Python.enum:
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  __str__(self, /)
+     |      Return str(self).
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from Boost.Python.enum:
+     |  
+     |  name
+     |  
+     |  ----------------------------------------------------------------------
+     |  Methods inherited from builtins.int:
+     |  
+     |  __abs__(self, /)
+     |      abs(self)
+     |  
+     |  __add__(self, value, /)
+     |      Return self+value.
+     |  
+     |  __and__(self, value, /)
+     |      Return self&value.
+     |  
+     |  __bool__(self, /)
+     |      self != 0
+     |  
+     |  __ceil__(...)
+     |      Ceiling of an Integral returns itself.
+     |  
+     |  __divmod__(self, value, /)
+     |      Return divmod(self, value).
+     |  
+     |  __eq__(self, value, /)
+     |      Return self==value.
+     |  
+     |  __float__(self, /)
+     |      float(self)
+     |  
+     |  __floor__(...)
+     |      Flooring an Integral returns itself.
+     |  
+     |  __floordiv__(self, value, /)
+     |      Return self//value.
+     |  
+     |  __format__(self, format_spec, /)
+     |      Default object formatter.
+     |  
+     |  __ge__(self, value, /)
+     |      Return self>=value.
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __getnewargs__(self, /)
+     |  
+     |  __gt__(self, value, /)
+     |      Return self>value.
+     |  
+     |  __hash__(self, /)
+     |      Return hash(self).
+     |  
+     |  __index__(self, /)
+     |      Return self converted to an integer, if self is suitable for use as an index into a list.
+     |  
+     |  __int__(self, /)
+     |      int(self)
+     |  
+     |  __invert__(self, /)
+     |      ~self
+     |  
+     |  __le__(self, value, /)
+     |      Return self<=value.
+     |  
+     |  __lshift__(self, value, /)
+     |      Return self<<value.
+     |  
+     |  __lt__(self, value, /)
+     |      Return self<value.
+     |  
+     |  __mod__(self, value, /)
+     |      Return self%value.
+     |  
+     |  __mul__(self, value, /)
+     |      Return self*value.
+     |  
+     |  __ne__(self, value, /)
+     |      Return self!=value.
+     |  
+     |  __neg__(self, /)
+     |      -self
+     |  
+     |  __or__(self, value, /)
+     |      Return self|value.
+     |  
+     |  __pos__(self, /)
+     |      +self
+     |  
+     |  __pow__(self, value, mod=None, /)
+     |      Return pow(self, value, mod).
+     |  
+     |  __radd__(self, value, /)
+     |      Return value+self.
+     |  
+     |  __rand__(self, value, /)
+     |      Return value&self.
+     |  
+     |  __rdivmod__(self, value, /)
+     |      Return divmod(value, self).
+     |  
+     |  __rfloordiv__(self, value, /)
+     |      Return value//self.
+     |  
+     |  __rlshift__(self, value, /)
+     |      Return value<<self.
+     |  
+     |  __rmod__(self, value, /)
+     |      Return value%self.
+     |  
+     |  __rmul__(self, value, /)
+     |      Return value*self.
+     |  
+     |  __ror__(self, value, /)
+     |      Return value|self.
+     |  
+     |  __round__(...)
+     |      Rounding an Integral returns itself.
+     |      Rounding with an ndigits argument also returns an integer.
+     |  
+     |  __rpow__(self, value, mod=None, /)
+     |      Return pow(value, self, mod).
+     |  
+     |  __rrshift__(self, value, /)
+     |      Return value>>self.
+     |  
+     |  __rshift__(self, value, /)
+     |      Return self>>value.
+     |  
+     |  __rsub__(self, value, /)
+     |      Return value-self.
+     |  
+     |  __rtruediv__(self, value, /)
+     |      Return value/self.
+     |  
+     |  __rxor__(self, value, /)
+     |      Return value^self.
+     |  
+     |  __sizeof__(self, /)
+     |      Returns size in memory, in bytes.
+     |  
+     |  __sub__(self, value, /)
+     |      Return self-value.
+     |  
+     |  __truediv__(self, value, /)
+     |      Return self/value.
+     |  
+     |  __trunc__(...)
+     |      Truncating an Integral returns itself.
+     |  
+     |  __xor__(self, value, /)
+     |      Return self^value.
+     |  
+     |  bit_length(self, /)
+     |      Number of bits necessary to represent self in binary.
+     |      
+     |      >>> bin(37)
+     |      '0b100101'
+     |      >>> (37).bit_length()
+     |      6
+     |  
+     |  conjugate(...)
+     |      Returns self, the complex conjugate of any int.
+     |  
+     |  to_bytes(self, /, length, byteorder, *, signed=False)
+     |      Return an array of bytes representing an integer.
+     |      
+     |      length
+     |        Length of bytes object to use.  An OverflowError is raised if the
+     |        integer is not representable with the given number of bytes.
+     |      byteorder
+     |        The byte order used to represent the integer.  If byteorder is 'big',
+     |        the most significant byte is at the beginning of the byte array.  If
+     |        byteorder is 'little', the most significant byte is at the end of the
+     |        byte array.  To request the native byte order of the host system, use
+     |        `sys.byteorder' as the byte order value.
+     |      signed
+     |        Determines whether two's complement is used to represent the integer.
+     |        If signed is False and a negative integer is given, an OverflowError
+     |        is raised.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Class methods inherited from builtins.int:
+     |  
+     |  from_bytes(bytes, byteorder, *, signed=False) from builtins.type
+     |      Return the integer represented by the given array of bytes.
+     |      
+     |      bytes
+     |        Holds the array of bytes to convert.  The argument must either
+     |        support the buffer protocol or be an iterable object producing bytes.
+     |        Bytes and bytearray are examples of built-in objects that support the
+     |        buffer protocol.
+     |      byteorder
+     |        The byte order used to represent the integer.  If byteorder is 'big',
+     |        the most significant byte is at the beginning of the byte array.  If
+     |        byteorder is 'little', the most significant byte is at the end of the
+     |        byte array.  To request the native byte order of the host system, use
+     |        `sys.byteorder' as the byte order value.
+     |      signed
+     |        Indicates whether two's complement is used to represent the integer.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from builtins.int:
+     |  
+     |  __new__(*args, **kwargs) from builtins.type
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from builtins.int:
+     |  
+     |  denominator
+     |      the denominator of a rational number in lowest terms
+     |  
+     |  imag
+     |      the imaginary part of a complex number
+     |  
+     |  numerator
+     |      the numerator of a rational number in lowest terms
+     |  
+     |  real
+     |      the real part of a complex number
+    
+    class StringVector(Boost.Python.instance)
+     |  Method resolution order:
+     |      StringVector
+     |      Boost.Python.instance
+     |      builtins.object
+     |  
+     |  Static methods defined here:
+     |  
+     |  __contains__(...)
+     |      __contains__( (StringVector)arg1, (object)arg2) -> bool :
+     |      
+     |          C++ signature :
+     |              bool __contains__(class std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > {lvalue},struct _object * __ptr64)
+     |  
+     |  __delitem__(...)
+     |      __delitem__( (StringVector)arg1, (object)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void __delitem__(class std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > {lvalue},struct _object * __ptr64)
+     |  
+     |  __getitem__(...)
+     |      __getitem__( (object)arg1, (object)arg2) -> object :
+     |      
+     |          C++ signature :
+     |              class boost::python::api::object __getitem__(struct boost::python::back_reference<class std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > & __ptr64>,struct _object * __ptr64)
+     |  
+     |  __init__(...)
+     |      __init__( (object)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void __init__(struct _object * __ptr64)
+     |  
+     |  __iter__(...)
+     |      __iter__( (object)arg1) -> object :
+     |      
+     |          C++ signature :
+     |              struct boost::python::objects::iterator_range<struct boost::python::return_value_policy<struct boost::python::return_by_value,struct boost::python::default_call_policies>,class std::_Vector_iterator<class std::_Vector_val<struct std::_Simple_types<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > > > __iter__(struct boost::python::back_reference<class std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > & __ptr64>)
+     |  
+     |  __len__(...)
+     |      __len__( (StringVector)arg1) -> int :
+     |      
+     |          C++ signature :
+     |              unsigned __int64 __len__(class std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > {lvalue})
+     |  
+     |  __reduce__ = <unnamed Boost.Python function>(...)
+     |  
+     |  __setitem__(...)
+     |      __setitem__( (StringVector)arg1, (object)arg2, (object)arg3) -> None :
+     |      
+     |          C++ signature :
+     |              void __setitem__(class std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > {lvalue},struct _object * __ptr64,struct _object * __ptr64)
+     |  
+     |  append(...)
+     |      append( (StringVector)arg1, (object)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void append(class std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > {lvalue},class boost::python::api::object)
+     |  
+     |  extend(...)
+     |      extend( (StringVector)arg1, (object)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void extend(class std::vector<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,class std::allocator<class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > > > {lvalue},class boost::python::api::object)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  __instance_size__ = 40
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from Boost.Python.instance:
+     |  
+     |  __new__(*args, **kwargs) from Boost.Python.class
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from Boost.Python.instance:
+     |  
+     |  __dict__
+     |  
+     |  __weakref__
+    
+    class TimestampedReward(Boost.Python.instance)
+     |  Method resolution order:
+     |      TimestampedReward
+     |      Boost.Python.instance
+     |      builtins.object
+     |  
+     |  Static methods defined here:
+     |  
+     |  __init__(...)
+     |      Raises an exception
+     |      This class cannot be instantiated from Python
+     |  
+     |  __reduce__ = <unnamed Boost.Python function>(...)
+     |  
+     |  __str__(...)
+     |      __str__( (TimestampedReward)arg1) -> object :
+     |      
+     |          C++ signature :
+     |              struct _object * __ptr64 __str__(class malmo::TimestampedReward {lvalue})
+     |  
+     |  getValue(...)
+     |      getValue( (TimestampedReward)arg1) -> float :
+     |      
+     |          C++ signature :
+     |              double getValue(class malmo::TimestampedReward {lvalue})
+     |  
+     |  getValueOnDimension(...)
+     |      getValueOnDimension( (TimestampedReward)arg1, (int)arg2) -> float :
+     |      
+     |          C++ signature :
+     |              double getValueOnDimension(class malmo::TimestampedReward {lvalue},int)
+     |  
+     |  hasValueOnDimension(...)
+     |      hasValueOnDimension( (TimestampedReward)arg1, (int)arg2) -> bool :
+     |      
+     |          C++ signature :
+     |              bool hasValueOnDimension(class malmo::TimestampedReward {lvalue},int)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  timestamp
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from Boost.Python.instance:
+     |  
+     |  __new__(*args, **kwargs) from Boost.Python.class
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from Boost.Python.instance:
+     |  
+     |  __dict__
+     |  
+     |  __weakref__
+    
+    class TimestampedRewardVector(Boost.Python.instance)
+     |  Method resolution order:
+     |      TimestampedRewardVector
+     |      Boost.Python.instance
+     |      builtins.object
+     |  
+     |  Static methods defined here:
+     |  
+     |  __contains__(...)
+     |      __contains__( (TimestampedRewardVector)arg1, (object)arg2) -> bool :
+     |      
+     |          C++ signature :
+     |              bool __contains__(class std::vector<class boost::shared_ptr<class malmo::TimestampedReward>,class std::allocator<class boost::shared_ptr<class malmo::TimestampedReward> > > {lvalue},struct _object * __ptr64)
+     |  
+     |  __delitem__(...)
+     |      __delitem__( (TimestampedRewardVector)arg1, (object)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void __delitem__(class std::vector<class boost::shared_ptr<class malmo::TimestampedReward>,class std::allocator<class boost::shared_ptr<class malmo::TimestampedReward> > > {lvalue},struct _object * __ptr64)
+     |  
+     |  __getitem__(...)
+     |      __getitem__( (object)arg1, (object)arg2) -> object :
+     |      
+     |          C++ signature :
+     |              class boost::python::api::object __getitem__(struct boost::python::back_reference<class std::vector<class boost::shared_ptr<class malmo::TimestampedReward>,class std::allocator<class boost::shared_ptr<class malmo::TimestampedReward> > > & __ptr64>,struct _object * __ptr64)
+     |  
+     |  __init__(...)
+     |      __init__( (object)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void __init__(struct _object * __ptr64)
+     |  
+     |  __iter__(...)
+     |      __iter__( (object)arg1) -> object :
+     |      
+     |          C++ signature :
+     |              struct boost::python::objects::iterator_range<struct boost::python::return_value_policy<struct boost::python::return_by_value,struct boost::python::default_call_policies>,class std::_Vector_iterator<class std::_Vector_val<struct std::_Simple_types<class boost::shared_ptr<class malmo::TimestampedReward> > > > > __iter__(struct boost::python::back_reference<class std::vector<class boost::shared_ptr<class malmo::TimestampedReward>,class std::allocator<class boost::shared_ptr<class malmo::TimestampedReward> > > & __ptr64>)
+     |  
+     |  __len__(...)
+     |      __len__( (TimestampedRewardVector)arg1) -> int :
+     |      
+     |          C++ signature :
+     |              unsigned __int64 __len__(class std::vector<class boost::shared_ptr<class malmo::TimestampedReward>,class std::allocator<class boost::shared_ptr<class malmo::TimestampedReward> > > {lvalue})
+     |  
+     |  __reduce__ = <unnamed Boost.Python function>(...)
+     |  
+     |  __setitem__(...)
+     |      __setitem__( (TimestampedRewardVector)arg1, (object)arg2, (object)arg3) -> None :
+     |      
+     |          C++ signature :
+     |              void __setitem__(class std::vector<class boost::shared_ptr<class malmo::TimestampedReward>,class std::allocator<class boost::shared_ptr<class malmo::TimestampedReward> > > {lvalue},struct _object * __ptr64,struct _object * __ptr64)
+     |  
+     |  append(...)
+     |      append( (TimestampedRewardVector)arg1, (object)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void append(class std::vector<class boost::shared_ptr<class malmo::TimestampedReward>,class std::allocator<class boost::shared_ptr<class malmo::TimestampedReward> > > {lvalue},class boost::python::api::object)
+     |  
+     |  extend(...)
+     |      extend( (TimestampedRewardVector)arg1, (object)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void extend(class std::vector<class boost::shared_ptr<class malmo::TimestampedReward>,class std::allocator<class boost::shared_ptr<class malmo::TimestampedReward> > > {lvalue},class boost::python::api::object)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  __instance_size__ = 40
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from Boost.Python.instance:
+     |  
+     |  __new__(*args, **kwargs) from Boost.Python.class
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from Boost.Python.instance:
+     |  
+     |  __dict__
+     |  
+     |  __weakref__
+    
+    class TimestampedString(Boost.Python.instance)
+     |  Method resolution order:
+     |      TimestampedString
+     |      Boost.Python.instance
+     |      builtins.object
+     |  
+     |  Static methods defined here:
+     |  
+     |  __init__(...)
+     |      Raises an exception
+     |      This class cannot be instantiated from Python
+     |  
+     |  __reduce__ = <unnamed Boost.Python function>(...)
+     |  
+     |  __str__(...)
+     |      __str__( (TimestampedString)arg1) -> object :
+     |      
+     |          C++ signature :
+     |              struct _object * __ptr64 __str__(struct malmo::TimestampedString {lvalue})
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  text
+     |  
+     |  timestamp
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from Boost.Python.instance:
+     |  
+     |  __new__(*args, **kwargs) from Boost.Python.class
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from Boost.Python.instance:
+     |  
+     |  __dict__
+     |  
+     |  __weakref__
+    
+    class TimestampedStringVector(Boost.Python.instance)
+     |  Method resolution order:
+     |      TimestampedStringVector
+     |      Boost.Python.instance
+     |      builtins.object
+     |  
+     |  Static methods defined here:
+     |  
+     |  __contains__(...)
+     |      __contains__( (TimestampedStringVector)arg1, (object)arg2) -> bool :
+     |      
+     |          C++ signature :
+     |              bool __contains__(class std::vector<class boost::shared_ptr<struct malmo::TimestampedString>,class std::allocator<class boost::shared_ptr<struct malmo::TimestampedString> > > {lvalue},struct _object * __ptr64)
+     |  
+     |  __delitem__(...)
+     |      __delitem__( (TimestampedStringVector)arg1, (object)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void __delitem__(class std::vector<class boost::shared_ptr<struct malmo::TimestampedString>,class std::allocator<class boost::shared_ptr<struct malmo::TimestampedString> > > {lvalue},struct _object * __ptr64)
+     |  
+     |  __getitem__(...)
+     |      __getitem__( (object)arg1, (object)arg2) -> object :
+     |      
+     |          C++ signature :
+     |              class boost::python::api::object __getitem__(struct boost::python::back_reference<class std::vector<class boost::shared_ptr<struct malmo::TimestampedString>,class std::allocator<class boost::shared_ptr<struct malmo::TimestampedString> > > & __ptr64>,struct _object * __ptr64)
+     |  
+     |  __init__(...)
+     |      __init__( (object)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void __init__(struct _object * __ptr64)
+     |  
+     |  __iter__(...)
+     |      __iter__( (object)arg1) -> object :
+     |      
+     |          C++ signature :
+     |              struct boost::python::objects::iterator_range<struct boost::python::return_value_policy<struct boost::python::return_by_value,struct boost::python::default_call_policies>,class std::_Vector_iterator<class std::_Vector_val<struct std::_Simple_types<class boost::shared_ptr<struct malmo::TimestampedString> > > > > __iter__(struct boost::python::back_reference<class std::vector<class boost::shared_ptr<struct malmo::TimestampedString>,class std::allocator<class boost::shared_ptr<struct malmo::TimestampedString> > > & __ptr64>)
+     |  
+     |  __len__(...)
+     |      __len__( (TimestampedStringVector)arg1) -> int :
+     |      
+     |          C++ signature :
+     |              unsigned __int64 __len__(class std::vector<class boost::shared_ptr<struct malmo::TimestampedString>,class std::allocator<class boost::shared_ptr<struct malmo::TimestampedString> > > {lvalue})
+     |  
+     |  __reduce__ = <unnamed Boost.Python function>(...)
+     |  
+     |  __setitem__(...)
+     |      __setitem__( (TimestampedStringVector)arg1, (object)arg2, (object)arg3) -> None :
+     |      
+     |          C++ signature :
+     |              void __setitem__(class std::vector<class boost::shared_ptr<struct malmo::TimestampedString>,class std::allocator<class boost::shared_ptr<struct malmo::TimestampedString> > > {lvalue},struct _object * __ptr64,struct _object * __ptr64)
+     |  
+     |  append(...)
+     |      append( (TimestampedStringVector)arg1, (object)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void append(class std::vector<class boost::shared_ptr<struct malmo::TimestampedString>,class std::allocator<class boost::shared_ptr<struct malmo::TimestampedString> > > {lvalue},class boost::python::api::object)
+     |  
+     |  extend(...)
+     |      extend( (TimestampedStringVector)arg1, (object)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void extend(class std::vector<class boost::shared_ptr<struct malmo::TimestampedString>,class std::allocator<class boost::shared_ptr<struct malmo::TimestampedString> > > {lvalue},class boost::python::api::object)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  __instance_size__ = 40
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from Boost.Python.instance:
+     |  
+     |  __new__(*args, **kwargs) from Boost.Python.class
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from Boost.Python.instance:
+     |  
+     |  __dict__
+     |  
+     |  __weakref__
+    
+    class TimestampedVideoFrame(Boost.Python.instance)
+     |  Method resolution order:
+     |      TimestampedVideoFrame
+     |      Boost.Python.instance
+     |      builtins.object
+     |  
+     |  Static methods defined here:
+     |  
+     |  __init__(...)
+     |      Raises an exception
+     |      This class cannot be instantiated from Python
+     |  
+     |  __reduce__ = <unnamed Boost.Python function>(...)
+     |  
+     |  __str__(...)
+     |      __str__( (TimestampedVideoFrame)arg1) -> object :
+     |      
+     |          C++ signature :
+     |              struct _object * __ptr64 __str__(struct malmo::TimestampedVideoFrame {lvalue})
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  channels
+     |  
+     |  frametype
+     |  
+     |  height
+     |  
+     |  pitch
+     |  
+     |  pixels
+     |  
+     |  timestamp
+     |  
+     |  width
+     |  
+     |  xPos
+     |  
+     |  yPos
+     |  
+     |  yaw
+     |  
+     |  zPos
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from Boost.Python.instance:
+     |  
+     |  __new__(*args, **kwargs) from Boost.Python.class
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from Boost.Python.instance:
+     |  
+     |  __dict__
+     |  
+     |  __weakref__
+    
+    class TimestampedVideoFrameVector(Boost.Python.instance)
+     |  Method resolution order:
+     |      TimestampedVideoFrameVector
+     |      Boost.Python.instance
+     |      builtins.object
+     |  
+     |  Static methods defined here:
+     |  
+     |  __contains__(...)
+     |      __contains__( (TimestampedVideoFrameVector)arg1, (object)arg2) -> bool :
+     |      
+     |          C++ signature :
+     |              bool __contains__(class std::vector<class boost::shared_ptr<struct malmo::TimestampedVideoFrame>,class std::allocator<class boost::shared_ptr<struct malmo::TimestampedVideoFrame> > > {lvalue},struct _object * __ptr64)
+     |  
+     |  __delitem__(...)
+     |      __delitem__( (TimestampedVideoFrameVector)arg1, (object)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void __delitem__(class std::vector<class boost::shared_ptr<struct malmo::TimestampedVideoFrame>,class std::allocator<class boost::shared_ptr<struct malmo::TimestampedVideoFrame> > > {lvalue},struct _object * __ptr64)
+     |  
+     |  __getitem__(...)
+     |      __getitem__( (object)arg1, (object)arg2) -> object :
+     |      
+     |          C++ signature :
+     |              class boost::python::api::object __getitem__(struct boost::python::back_reference<class std::vector<class boost::shared_ptr<struct malmo::TimestampedVideoFrame>,class std::allocator<class boost::shared_ptr<struct malmo::TimestampedVideoFrame> > > & __ptr64>,struct _object * __ptr64)
+     |  
+     |  __init__(...)
+     |      __init__( (object)arg1) -> None :
+     |      
+     |          C++ signature :
+     |              void __init__(struct _object * __ptr64)
+     |  
+     |  __iter__(...)
+     |      __iter__( (object)arg1) -> object :
+     |      
+     |          C++ signature :
+     |              struct boost::python::objects::iterator_range<struct boost::python::return_value_policy<struct boost::python::return_by_value,struct boost::python::default_call_policies>,class std::_Vector_iterator<class std::_Vector_val<struct std::_Simple_types<class boost::shared_ptr<struct malmo::TimestampedVideoFrame> > > > > __iter__(struct boost::python::back_reference<class std::vector<class boost::shared_ptr<struct malmo::TimestampedVideoFrame>,class std::allocator<class boost::shared_ptr<struct malmo::TimestampedVideoFrame> > > & __ptr64>)
+     |  
+     |  __len__(...)
+     |      __len__( (TimestampedVideoFrameVector)arg1) -> int :
+     |      
+     |          C++ signature :
+     |              unsigned __int64 __len__(class std::vector<class boost::shared_ptr<struct malmo::TimestampedVideoFrame>,class std::allocator<class boost::shared_ptr<struct malmo::TimestampedVideoFrame> > > {lvalue})
+     |  
+     |  __reduce__ = <unnamed Boost.Python function>(...)
+     |  
+     |  __setitem__(...)
+     |      __setitem__( (TimestampedVideoFrameVector)arg1, (object)arg2, (object)arg3) -> None :
+     |      
+     |          C++ signature :
+     |              void __setitem__(class std::vector<class boost::shared_ptr<struct malmo::TimestampedVideoFrame>,class std::allocator<class boost::shared_ptr<struct malmo::TimestampedVideoFrame> > > {lvalue},struct _object * __ptr64,struct _object * __ptr64)
+     |  
+     |  append(...)
+     |      append( (TimestampedVideoFrameVector)arg1, (object)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void append(class std::vector<class boost::shared_ptr<struct malmo::TimestampedVideoFrame>,class std::allocator<class boost::shared_ptr<struct malmo::TimestampedVideoFrame> > > {lvalue},class boost::python::api::object)
+     |  
+     |  extend(...)
+     |      extend( (TimestampedVideoFrameVector)arg1, (object)arg2) -> None :
+     |      
+     |          C++ signature :
+     |              void extend(class std::vector<class boost::shared_ptr<struct malmo::TimestampedVideoFrame>,class std::allocator<class boost::shared_ptr<struct malmo::TimestampedVideoFrame> > > {lvalue},class boost::python::api::object)
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data and other attributes defined here:
+     |  
+     |  __instance_size__ = 40
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from Boost.Python.instance:
+     |  
+     |  __new__(*args, **kwargs) from Boost.Python.class
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from Boost.Python.instance:
+     |  
+     |  __dict__
+     |  
+     |  __weakref__
+    
+    class VideoPolicy(Boost.Python.enum)
+     |  int([x]) -> integer
+     |  int(x, base=10) -> integer
+     |  
+     |  Convert a number or string to an integer, or return 0 if no arguments
+     |  are given.  If x is a number, return x.__int__().  For floating point
+     |  numbers, this truncates towards zero.
+     |  
+     |  If x is not a number or if base is given, then x must be a string,
+     |  bytes, or bytearray instance representing an integer literal in the
+     |  given base.  The literal can be preceded by '+' or '-' and be surrounded
+     |  by whitespace.  The base defaults to 10.  Valid bases are 0 and 2-36.
+     |  Base 0 means to interpret the base from the string as an integer literal.
+     |  >>> int('0b100', base=0)
+     |  4
+     |  
+     |  Method resolution order:
+     |      VideoPolicy
+     |      Boost.Python.enum
+     |      builtins.int
+     |      builtins.object
+     |  
+     |  Data and other attributes defined here:
+     |  
+     |  KEEP_ALL_FRAMES = MalmoPython.VideoPolicy.KEEP_ALL_FRAMES
+     |  
+     |  LATEST_FRAME_ONLY = MalmoPython.VideoPolicy.LATEST_FRAME_ONLY
+     |  
+     |  names = {'KEEP_ALL_FRAMES': MalmoPython.VideoPolicy.KEEP_ALL_FRAMES, '...
+     |  
+     |  values = {0: MalmoPython.VideoPolicy.LATEST_FRAME_ONLY, 1: MalmoPython...
+     |  
+     |  ----------------------------------------------------------------------
+     |  Methods inherited from Boost.Python.enum:
+     |  
+     |  __repr__(self, /)
+     |      Return repr(self).
+     |  
+     |  __str__(self, /)
+     |      Return str(self).
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from Boost.Python.enum:
+     |  
+     |  name
+     |  
+     |  ----------------------------------------------------------------------
+     |  Methods inherited from builtins.int:
+     |  
+     |  __abs__(self, /)
+     |      abs(self)
+     |  
+     |  __add__(self, value, /)
+     |      Return self+value.
+     |  
+     |  __and__(self, value, /)
+     |      Return self&value.
+     |  
+     |  __bool__(self, /)
+     |      self != 0
+     |  
+     |  __ceil__(...)
+     |      Ceiling of an Integral returns itself.
+     |  
+     |  __divmod__(self, value, /)
+     |      Return divmod(self, value).
+     |  
+     |  __eq__(self, value, /)
+     |      Return self==value.
+     |  
+     |  __float__(self, /)
+     |      float(self)
+     |  
+     |  __floor__(...)
+     |      Flooring an Integral returns itself.
+     |  
+     |  __floordiv__(self, value, /)
+     |      Return self//value.
+     |  
+     |  __format__(self, format_spec, /)
+     |      Default object formatter.
+     |  
+     |  __ge__(self, value, /)
+     |      Return self>=value.
+     |  
+     |  __getattribute__(self, name, /)
+     |      Return getattr(self, name).
+     |  
+     |  __getnewargs__(self, /)
+     |  
+     |  __gt__(self, value, /)
+     |      Return self>value.
+     |  
+     |  __hash__(self, /)
+     |      Return hash(self).
+     |  
+     |  __index__(self, /)
+     |      Return self converted to an integer, if self is suitable for use as an index into a list.
+     |  
+     |  __int__(self, /)
+     |      int(self)
+     |  
+     |  __invert__(self, /)
+     |      ~self
+     |  
+     |  __le__(self, value, /)
+     |      Return self<=value.
+     |  
+     |  __lshift__(self, value, /)
+     |      Return self<<value.
+     |  
+     |  __lt__(self, value, /)
+     |      Return self<value.
+     |  
+     |  __mod__(self, value, /)
+     |      Return self%value.
+     |  
+     |  __mul__(self, value, /)
+     |      Return self*value.
+     |  
+     |  __ne__(self, value, /)
+     |      Return self!=value.
+     |  
+     |  __neg__(self, /)
+     |      -self
+     |  
+     |  __or__(self, value, /)
+     |      Return self|value.
+     |  
+     |  __pos__(self, /)
+     |      +self
+     |  
+     |  __pow__(self, value, mod=None, /)
+     |      Return pow(self, value, mod).
+     |  
+     |  __radd__(self, value, /)
+     |      Return value+self.
+     |  
+     |  __rand__(self, value, /)
+     |      Return value&self.
+     |  
+     |  __rdivmod__(self, value, /)
+     |      Return divmod(value, self).
+     |  
+     |  __rfloordiv__(self, value, /)
+     |      Return value//self.
+     |  
+     |  __rlshift__(self, value, /)
+     |      Return value<<self.
+     |  
+     |  __rmod__(self, value, /)
+     |      Return value%self.
+     |  
+     |  __rmul__(self, value, /)
+     |      Return value*self.
+     |  
+     |  __ror__(self, value, /)
+     |      Return value|self.
+     |  
+     |  __round__(...)
+     |      Rounding an Integral returns itself.
+     |      Rounding with an ndigits argument also returns an integer.
+     |  
+     |  __rpow__(self, value, mod=None, /)
+     |      Return pow(value, self, mod).
+     |  
+     |  __rrshift__(self, value, /)
+     |      Return value>>self.
+     |  
+     |  __rshift__(self, value, /)
+     |      Return self>>value.
+     |  
+     |  __rsub__(self, value, /)
+     |      Return value-self.
+     |  
+     |  __rtruediv__(self, value, /)
+     |      Return value/self.
+     |  
+     |  __rxor__(self, value, /)
+     |      Return value^self.
+     |  
+     |  __sizeof__(self, /)
+     |      Returns size in memory, in bytes.
+     |  
+     |  __sub__(self, value, /)
+     |      Return self-value.
+     |  
+     |  __truediv__(self, value, /)
+     |      Return self/value.
+     |  
+     |  __trunc__(...)
+     |      Truncating an Integral returns itself.
+     |  
+     |  __xor__(self, value, /)
+     |      Return self^value.
+     |  
+     |  bit_length(self, /)
+     |      Number of bits necessary to represent self in binary.
+     |      
+     |      >>> bin(37)
+     |      '0b100101'
+     |      >>> (37).bit_length()
+     |      6
+     |  
+     |  conjugate(...)
+     |      Returns self, the complex conjugate of any int.
+     |  
+     |  to_bytes(self, /, length, byteorder, *, signed=False)
+     |      Return an array of bytes representing an integer.
+     |      
+     |      length
+     |        Length of bytes object to use.  An OverflowError is raised if the
+     |        integer is not representable with the given number of bytes.
+     |      byteorder
+     |        The byte order used to represent the integer.  If byteorder is 'big',
+     |        the most significant byte is at the beginning of the byte array.  If
+     |        byteorder is 'little', the most significant byte is at the end of the
+     |        byte array.  To request the native byte order of the host system, use
+     |        `sys.byteorder' as the byte order value.
+     |      signed
+     |        Determines whether two's complement is used to represent the integer.
+     |        If signed is False and a negative integer is given, an OverflowError
+     |        is raised.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Class methods inherited from builtins.int:
+     |  
+     |  from_bytes(bytes, byteorder, *, signed=False) from builtins.type
+     |      Return the integer represented by the given array of bytes.
+     |      
+     |      bytes
+     |        Holds the array of bytes to convert.  The argument must either
+     |        support the buffer protocol or be an iterable object producing bytes.
+     |        Bytes and bytearray are examples of built-in objects that support the
+     |        buffer protocol.
+     |      byteorder
+     |        The byte order used to represent the integer.  If byteorder is 'big',
+     |        the most significant byte is at the beginning of the byte array.  If
+     |        byteorder is 'little', the most significant byte is at the end of the
+     |        byte array.  To request the native byte order of the host system, use
+     |        `sys.byteorder' as the byte order value.
+     |      signed
+     |        Indicates whether two's complement is used to represent the integer.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from builtins.int:
+     |  
+     |  __new__(*args, **kwargs) from builtins.type
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from builtins.int:
+     |  
+     |  denominator
+     |      the denominator of a rational number in lowest terms
+     |  
+     |  imag
+     |      the imaginary part of a complex number
+     |  
+     |  numerator
+     |      the numerator of a rational number in lowest terms
+     |  
+     |  real
+     |      the real part of a complex number
+    
+    class WorldState(Boost.Python.instance)
+     |  Method resolution order:
+     |      WorldState
+     |      Boost.Python.instance
+     |      builtins.object
+     |  
+     |  Static methods defined here:
+     |  
+     |  __init__(...)
+     |      Raises an exception
+     |      This class cannot be instantiated from Python
+     |  
+     |  __reduce__ = <unnamed Boost.Python function>(...)
+     |  
+     |  __str__(...)
+     |      __str__( (WorldState)arg1) -> object :
+     |      
+     |          C++ signature :
+     |              struct _object * __ptr64 __str__(struct malmo::WorldState {lvalue})
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors defined here:
+     |  
+     |  errors
+     |  
+     |  has_mission_begun
+     |  
+     |  is_mission_running
+     |  
+     |  mission_control_messages
+     |  
+     |  number_of_observations_since_last_state
+     |  
+     |  number_of_rewards_since_last_state
+     |  
+     |  number_of_video_frames_since_last_state
+     |  
+     |  observations
+     |  
+     |  rewards
+     |  
+     |  video_frames
+     |  
+     |  ----------------------------------------------------------------------
+     |  Static methods inherited from Boost.Python.instance:
+     |  
+     |  __new__(*args, **kwargs) from Boost.Python.class
+     |      Create and return a new object.  See help(type) for accurate signature.
+     |  
+     |  ----------------------------------------------------------------------
+     |  Data descriptors inherited from Boost.Python.instance:
+     |  
+     |  __dict__
+     |  
+     |  __weakref__
+
+FUNCTIONS
+    appendToLog(...)
+        appendToLog( (LoggingSeverityLevel)arg1, (str)arg2) -> None :
+        
+            C++ signature :
+                void appendToLog(enum malmo::Logger::LoggingSeverityLevel,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >)
+    
+    setLogging(...)
+        setLogging( (str)arg1, (LoggingSeverityLevel)arg2) -> None :
+        
+            C++ signature :
+                void setLogging(class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> >,enum malmo::Logger::LoggingSeverityLevel)
+    
+    setLoggingComponent(...)
+        setLoggingComponent( (LoggingComponent)arg1, (bool)arg2) -> None :
+        
+            C++ signature :
+                void setLoggingComponent(enum malmo::Logger::LoggingComponent,bool)
+
+FILE
+    d:\malmo\python_examples\malmopython.pyd
+
+
